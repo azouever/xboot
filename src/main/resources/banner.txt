@@ -1,0 +1,10 @@
+${AnsiColor.CYAN}
+                   #     #       ######  ####### ####### #######
+                    #   #        #     # #     # #     #    #
+                     # #         #     # #     # #     #    #
+ ##### ##### #####    #    ##### ######  #     # #     #    #    ##### ##### #####
+                     # #         #     # #     # #     #    #
+                    #   #        #     # #     # #     #    #
+                   #     #       ######  ####### #######    #
+${AnsiColor.RED}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
