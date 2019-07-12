@@ -3,3 +3,11 @@ server:
 spring:
   application:
     name: omit
+  mvc:
+    view:
+      suffix: .html
+  datasource:
+    url: jdbc:mysql:///leaf
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
