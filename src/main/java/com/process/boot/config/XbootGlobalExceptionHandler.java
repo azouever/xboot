@@ -19,7 +19,7 @@ public class XbootGlobalExceptionHandler {
   public ModelAndView ralphRuntimeExceptionHandler(HttpServletRequest request,
       XbootRuntimeException exception) throws Exception {
     ModelAndView mav = new ModelAndView();
-    mav.setViewName("error");// 异常信息展示到哪个页面，此处指定在error.html页面中进行展示
+    mav.setViewName("hello");// 异常信息展示到哪个页面，此处指定在error.html页面中进行展示
     return mav;
   }
 

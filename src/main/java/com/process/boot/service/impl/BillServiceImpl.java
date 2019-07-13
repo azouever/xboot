@@ -5,6 +5,8 @@ import com.process.boot.exception.XbootRuntimeException;
 import com.process.boot.service.BillService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.transaction.Transaction;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
@@ -15,6 +17,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  */
 @Slf4j
 @Service
+@EnableAsync
 public class BillServiceImpl implements BillService {
 
   @Override

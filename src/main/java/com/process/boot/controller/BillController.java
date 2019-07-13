@@ -8,6 +8,8 @@ import com.process.boot.service.BillService;
 import java.util.Date;
 import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.aop.TargetClassAware;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +35,10 @@ public class BillController {
 
   @GetMapping("/bills")
   public ResponseEntity findBills() {
-    billService.findBills();
+    //billService.findBills();
+    log.info("billService的被代理的Class类型:{}", billService.getClass());
+    log.info("billService的真实的Class类型:{}", ((TargetClassAware) billService).getTargetClass());
+    log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billService));
     return ResponseEntity.ok("账单列表");
   }
 
