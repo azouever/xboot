@@ -2,6 +2,8 @@ package com.process.boot.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import javax.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +15,8 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "leaf_bill")
 public class Bill {
 
   /**
