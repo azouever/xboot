@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * @author xkx
  * @description
  */
-@Component
+//@Component
 public class BallTeam implements Team {
 
   private String name;

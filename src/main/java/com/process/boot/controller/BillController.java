@@ -1,18 +1,22 @@
 package com.process.boot.controller;
 
 
+import com.process.boot.entity.BallTeam;
 import com.process.boot.entity.Bill;
 import com.process.boot.entity.Plan;
 import com.process.boot.entity.vo.BillVO;
 import com.process.boot.service.BillService;
 import java.util.Date;
-import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.TargetClassAware;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,6 +30,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Slf4j
 @RestController
 public class BillController {
+
+  @Autowired
+  private ApplicationContext applicationContext;
 
   private final BillService billService;
 
@@ -68,5 +75,11 @@ public class BillController {
   public Plan findJson() {
     Plan plan = Plan.builder().name("plan0").type(1).build();
     return plan;
+  }
+
+  @GetMapping("/ballTeam")
+  public String ballTeam() {
+    BallTeam ballTeam = applicationContext.getBean(BallTeam.class);
+    return ballTeam.getName();
   }
 }

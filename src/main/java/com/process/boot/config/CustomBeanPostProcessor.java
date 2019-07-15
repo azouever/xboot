@@ -21,19 +21,15 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
   @Override
   public Object postProcessBeforeInitialization(Object bean, String beanName)
       throws BeansException {
-    log.error("+++++++++ postProcessBeforeInitialization 被调用了  ++++ 开始  ++++++++++++++++++");
     System.out.println("bean初始化方法调用前被调用");
     System.out.println(bean);
-    log.error("+++++++++ postProcessBeforeInitialization 被调用了  ++++ 结束 +++++++++++++++++");
-    return null;
+    return bean;
   }
 
   @Override
   public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-    log.error("+++++++++ postProcessAfterInitialization被调用了  ++++ 开始  ++++++++++++++++++");
     System.out.println("bean初始化方法调用后被调用");
     System.out.println(bean);
-    log.error("+++++++++ postProcessAfterInitialization被调用了 +++++ 结束 +++++++++++++++++");
-    return null;
+    return bean;
   }
 }

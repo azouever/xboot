@@ -1,8 +1,11 @@
 package com.process.boot;
 
+import com.process.boot.entity.BallTeam;
+import java.util.Map;
 import org.springframework.boot.Banner.Mode;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * @author xkx
@@ -13,7 +16,7 @@ public class XbootApplication {
   public static void main(String[] args) {
     SpringApplication application = new SpringApplication(XbootApplication.class);
     application.setBannerMode(Mode.OFF);
-    application.run(args);
+    ConfigurableApplicationContext applicationContext = application.run(args);
 //    SpringApplication.run(XbootApplication.class, args);
   }
 

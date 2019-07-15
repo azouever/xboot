@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
  * @description
  */
 @Component
-public interface Team<T> {
+public interface Team {
 
 }
