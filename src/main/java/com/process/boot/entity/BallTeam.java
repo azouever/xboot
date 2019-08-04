@@ -20,7 +20,7 @@ public class BallTeam implements Team {
   }
 
   public BallTeam(String name, String address) {
-    System.out.println(this.getClass().getName() + "constructor running ...");
+    //System.out.println(this.getClass().getName() + "constructor running ...");
     this.name = name;
     this.address = address;
   }
@@ -39,5 +39,12 @@ public class BallTeam implements Team {
 
   public void setAddress(String address) {
     this.address = address;
+  }
+  @Override
+  public String toString() {
+    return "BallTeam{" +
+        "name='" + name + '\'' +
+        ", address='" + address + '\'' +
+        '}';
   }
 }
