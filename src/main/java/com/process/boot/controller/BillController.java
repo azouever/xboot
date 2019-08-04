@@ -6,6 +6,8 @@ import com.process.boot.entity.Bill;
 import com.process.boot.entity.Plan;
 import com.process.boot.entity.vo.BillVO;
 import com.process.boot.service.BillService;
+import com.process.boot.service.impl.BillServiceImpl;
+import java.util.Arrays;
 import java.util.Date;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.TargetClassAware;
@@ -36,7 +38,7 @@ public class BillController {
 
   private final BillService billService;
 
-  public BillController(BillService billService) {
+  public BillController(BillServiceImpl billService) {
     this.billService = billService;
   }
 
@@ -46,6 +48,9 @@ public class BillController {
     log.info("billService的被代理的Class类型:{}", billService.getClass());
     log.info("billService的真实的Class类型:{}", ((TargetClassAware) billService).getTargetClass());
     log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billService));
+
+    String[] names = applicationContext.getBeanNamesForType(BillService.class);
+    Arrays.stream(names).forEach(System.out::println);
     return ResponseEntity.ok("账单列表");
   }
 
