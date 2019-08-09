@@ -1,6 +1,7 @@
 package com.process.boot.reflect;
 
 import com.process.boot.entity.BallTeam;
+import com.process.boot.entity.Team;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import org.apache.ibatis.reflection.property.PropertyTokenizer;
@@ -34,5 +35,10 @@ public class ReflectTest {
 
     PropertyTokenizer propertyTokenizer = new PropertyTokenizer("map.name");
     System.out.println(propertyTokenizer);
+  }
+
+  @Test
+  public void isAssignableFromTest() {
+    System.out.println(Team.class.isAssignableFrom(BallTeam.class));
   }
 }

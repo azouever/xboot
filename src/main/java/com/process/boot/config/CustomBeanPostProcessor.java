@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 /**
  * @author xkx
  * @description
- * @since 2019/4/4 10:56
  */
 @Slf4j
 @Component
@@ -21,15 +20,15 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
   @Override
   public Object postProcessBeforeInitialization(Object bean, String beanName)
       throws BeansException {
-    System.out.println("bean初始化方法调用前被调用");
-    System.out.println(bean);
+//    System.out.println("bean初始化方法调用前被调用");
+//    System.out.println(bean);
     return bean;
   }
 
   @Override
   public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-    System.out.println("bean初始化方法调用后被调用");
-    System.out.println(bean);
+//    System.out.println("bean初始化方法调用后被调用");
+//    System.out.println(bean);
     return bean;
   }
 }

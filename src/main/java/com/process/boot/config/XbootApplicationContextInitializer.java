@@ -19,9 +19,9 @@ public class XbootApplicationContextInitializer implements ApplicationContextIni
    */
   @Override
   public void initialize(ConfigurableApplicationContext applicationContext) {
-    System.out.println("===============================");
-    System.out.println(applicationContext);
-    System.out.println("applicationContext初始化");
-    System.out.println("===============================");
+//    System.out.println("===============================");
+//    System.out.println(applicationContext);
+//    System.out.println("applicationContext初始化");
+//    System.out.println("===============================");
   }
 }

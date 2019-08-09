@@ -1,5 +1,5 @@
 server:
-  port: 10087
+  port: 10089
 spring:
   application:
     name: omit
@@ -11,3 +11,32 @@ spring:
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+#  redis:
+#    host: localhost
+#    port: 6379
+#    database: 3
+#    cluster:
+#      max-redirects: 3
+#      nodes:
+#            - 11111:6379
+#            - 11112:6379
+#            - 11113:6379
+#    sentinel:
+#      master:
+
+
+    # lettuce 客户端
+#    lettuce:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 4
+#        max-wait: 10000ms
+        #2.x版本中由于引入了不同客户端，需要指定配置哪种连接池
+        #jedis客户端
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 4
+#        max-wait: 10000ms

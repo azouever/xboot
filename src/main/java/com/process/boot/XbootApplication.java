@@ -17,7 +17,6 @@ public class XbootApplication {
     SpringApplication application = new SpringApplication(XbootApplication.class);
     application.setBannerMode(Mode.OFF);
     ConfigurableApplicationContext applicationContext = application.run(args);
-//    SpringApplication.run(XbootApplication.class, args);
   }
 
 }

@@ -22,6 +22,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -31,6 +32,7 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Slf4j
 @RestController
+@RequestMapping("/bill")
 public class BillController {
 
   @Autowired
@@ -42,7 +44,7 @@ public class BillController {
     this.billService = billService;
   }
 
-  @GetMapping("/bills")
+  @GetMapping("/find")
   public ResponseEntity findBills() {
     //billService.findBills();
     log.info("billService的被代理的Class类型:{}", billService.getClass());
@@ -54,7 +56,7 @@ public class BillController {
     return ResponseEntity.ok("账单列表");
   }
 
-  @PostMapping("/bill/save")
+  @PostMapping("/save")
   public ResponseEntity save(@RequestBody BillVO billVO) {
     Bill bill = new Bill();
     BeanUtils.copyProperties(billVO, bill);
