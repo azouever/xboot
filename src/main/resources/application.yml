@@ -34,6 +34,10 @@ spring:
 #        max-wait: 10000ms
         #2.x版本中由于引入了不同客户端，需要指定配置哪种连接池
         #jedis客户端
+  security:
+    user:
+      name: kai
+      password: kai
 #    jedis:
 #      pool:
 #        max-active: 8

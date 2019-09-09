@@ -9,14 +9,27 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class ThreadTest {
 
   static volatile boolean stop;
+  private static final Integer _1M = 1024*1024;
 
   public static void main(String[] args) throws InterruptedException {
-    System.out.println("你好");
 //    Thread subThread = new Thread(new SubThread());
 //    System.out.println("主线程进行");
 //    subThread.start();
 //    Thread.sleep(1000L);
 //    subThread.interrupt();
+    byte[] allocation1, allocation2,allocation3,allocation4,allocation5,
+        allocation6,allocation7,allocation8,allocation9;
+    allocation1 = new byte[2*_1M];
+    allocation2 = new byte[2*_1M];
+    allocation3 = new byte[3*_1M];
+    allocation4 = new byte[4*_1M];
+    allocation5 = new byte[1*_1M];
+//    allocation6 = new byte[1*_1M];
+
+//    allocation7 = new byte[2*_1M];
+//    allocation8 = new byte[2*_1M];
+    //allocation2 = new byte[900*1024];
+
 
   }
 

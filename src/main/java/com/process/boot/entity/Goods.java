@@ -13,43 +13,42 @@ import lombok.NoArgsConstructor;
  * @author xkx
  * @description
  */
-@Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "leaf_bill")
-public class Bill {
+@Table(name = "leaf_goods")
+@Entity
+public class Goods {
 
   /**
-   * 账单id
+   * 商品id
    */
   private Long id;
 
   /**
-   * 账单编号
+   * 商品编号
    */
-  private String billNo;
+  private String goodsNo;
 
   /**
-   * 账单金额
+   * 商品价格
    */
-  private BigDecimal amount;
+  private BigDecimal price;
 
   /**
-   * 用户
+   * 商品数量
    */
-  private Long personId;
+  private Integer quantity;
 
   /**
-   * 账单备注
+   * 商品状态（上架、下架）
    */
-  private String remark;
+  private Integer status;
 
   /**
-   * 创建时间
+   * 进入系统的时间
    */
   private Date createDate;
-
 
 }

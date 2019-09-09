@@ -57,7 +57,7 @@
       <artifactId>mybatis-spring-boot-starter</artifactId>
       <version>${mybatis-spring-boot-starter.version}</version>
     </dependency>
-
+    <!--tk-mapper-->
     <dependency>
       <groupId>tk.mybatis</groupId>
       <artifactId>mapper-spring-boot-starter</artifactId>
@@ -83,6 +83,31 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>25.0-jre</version>
+    </dependency>
+    <!--定时任务调度-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-quartz</artifactId>
+    </dependency>
+    <!--hystrix 熔断降级-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-hystrix</artifactId>
+      <version>1.4.3.RELEASE</version>
+    </dependency>
+    <!--zookeeper客户端 curator-->
+    <dependency>
+      <groupId>org.apache.curator</groupId>
+      <artifactId>curator-framework</artifactId>
+      <version>4.0.0</version>
+    </dependency>
+
+    <!--netty-->
+    <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+      <version>4.1.38.Final</version>
     </dependency>
   </dependencies>
 
