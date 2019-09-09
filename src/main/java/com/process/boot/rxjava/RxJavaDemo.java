@@ -42,7 +42,7 @@ public class RxJavaDemo {
       public void onNext(Object o) {
 
       }
-    })
+    });
 
   }
 
