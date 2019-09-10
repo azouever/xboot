@@ -109,6 +109,12 @@
       <artifactId>netty-all</artifactId>
       <version>4.1.38.Final</version>
     </dependency>
+    <!--test-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+<!--      <scope>test</scope>-->
+    </dependency>
   </dependencies>
 
   <build>
