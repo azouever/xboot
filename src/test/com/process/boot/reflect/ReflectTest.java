@@ -6,6 +6,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import org.apache.ibatis.reflection.property.PropertyTokenizer;
 import org.junit.Test;
+import sun.reflect.Reflection;
 
 /**
  * @author xkx
@@ -40,5 +41,10 @@ public class ReflectTest {
   @Test
   public void isAssignableFromTest() {
     System.out.println(Team.class.isAssignableFrom(BallTeam.class));
+  }
+  @Test
+  public void callerTest() {
+    Class<?> callerClass = Reflection.getCallerClass();
+    System.out.println(callerClass.getName());
   }
 }

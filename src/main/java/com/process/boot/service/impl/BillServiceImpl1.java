@@ -2,19 +2,20 @@ package com.process.boot.service.impl;
 
 import com.process.boot.entity.Bill;
 import com.process.boot.entity.Goods;
-import com.process.boot.exception.XbootRuntimeException;
 import com.process.boot.mapper.BillMapper;
 import com.process.boot.mapper.GoodsMapper;
 import com.process.boot.service.BillService;
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
+
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * @author xkx
@@ -38,9 +39,10 @@ public class BillServiceImpl1 implements BillService {
   }
 
   @Override
-  public void findBills() {
-    log.info("find all bills now, no parameters");
-    throw new XbootRuntimeException("test global exception catch");
+  public List findBills() {
+    //log.info("find all bills now, no parameters");
+    //throw new XbootRuntimeException("test global exception catch");
+    return this.billMapper.findBills();
   }
 
   @Override
@@ -68,6 +70,6 @@ public class BillServiceImpl1 implements BillService {
     goods.setCreateDate(new Date());
     goods.setQuantity(999);
     this.goodsMapper.insert(goods);
-    throw new NullPointerException();
+    //throw new NullPointerException();
   }
 }

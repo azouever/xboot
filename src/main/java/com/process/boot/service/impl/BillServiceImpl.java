@@ -3,15 +3,15 @@ package com.process.boot.service.impl;
 import com.process.boot.entity.Bill;
 import com.process.boot.exception.XbootRuntimeException;
 import com.process.boot.service.BillService;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.transaction.Transaction;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
+
+import java.util.List;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author xkx
@@ -32,7 +32,7 @@ public class BillServiceImpl implements BillService {
   }
 
   @Override
-  public void findBills() {
+  public List findBills() {
     log.info("find all bills now, no parameters");
     throw new XbootRuntimeException("test global exception catch");
   }

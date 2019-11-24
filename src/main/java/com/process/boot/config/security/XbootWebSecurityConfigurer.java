@@ -1,12 +1,17 @@
 package com.process.boot.config.security;
 
 import com.process.boot.config.security.provider.XbootAuthenticationProvider;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * @author xkx
@@ -24,6 +29,12 @@ public class XbootWebSecurityConfigurer extends WebSecurityConfigurerAdapter {
         .antMatchers("/settle/**").hasRole("Role_Settle")
         .and()
         .formLogin().loginPage("login.html")
+            .successHandler(new AuthenticationSuccessHandler() {
+              @Override
+              public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+                    response.sendRedirect("/bill/find");
+                }
+            })
         .permitAll()
         .and()
         .authenticationProvider(xbootAuthenticationProvider());

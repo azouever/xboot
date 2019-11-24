@@ -2,6 +2,8 @@ package com.process.boot.service;
 
 import com.process.boot.entity.Bill;
 
+import java.util.List;
+
 /**
  * @author xkx
  * @description
@@ -11,7 +13,7 @@ public interface BillService {
   /**
    * 查询账单列表
    */
-  void findBills();
+  List findBills();
 
   /**
    * 查询账单列表

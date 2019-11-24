@@ -9,38 +9,55 @@ spring:
   datasource:
     url: jdbc:mysql:///leaf?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
     username: root
-    password: 1234
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
-#  redis:
-#    host: localhost
-#    port: 6379
-#    database: 3
-#    cluster:
-#      max-redirects: 3
-#      nodes:
-#            - 11111:6379
-#            - 11112:6379
-#            - 11113:6379
-#    sentinel:
-#      master:
+      #  redis:
+      #    host: localhost
+      #    port: 6379
+      #    database: 3
+      #    cluster:
+      #      max-redirects: 3
+      #      nodes:
+      #            - 11111:6379
+      #            - 11112:6379
+      #            - 11113:6379
+      #    sentinel:
+      #      master:
 
 
-    # lettuce 客户端
-#    lettuce:
-#      pool:
-#        max-active: 8
-#        max-idle: 8
-#        min-idle: 4
-#        max-wait: 10000ms
-        #2.x版本中由于引入了不同客户端，需要指定配置哪种连接池
-        #jedis客户端
+      # lettuce 客户端
+      #    lettuce:
+      #      pool:
+      #        max-active: 8
+      #        max-idle: 8
+      #        min-idle: 4
+      #        max-wait: 10000ms
+      #2.x版本中由于引入了不同客户端，需要指定配置哪种连接池
+    #jedis客户端
   security:
     user:
       name: kai
       password: kai
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 #    jedis:
 #      pool:
 #        max-active: 8
 #        max-idle: 8
 #        min-idle: 4
 #        max-wait: 10000ms
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.process.boot.entity
+
+# 开发时使用mapper修改即使生效
+  refresh-mapper-enable: true
+  #configuration:
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.process.boot.mapper: debug
