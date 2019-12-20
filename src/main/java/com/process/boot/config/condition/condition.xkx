@@ -1,0 +1,3 @@
+here are something about this package
+这个包是学习springboot的时候对于条件注解的时候，springboot中自动配置的处理，条件注解的使用就起了很大的作用
+虽然我不懂没看怎么去解析那个注解的连 平常的 @Component @Configuration 等都只是寥寥看了一下
