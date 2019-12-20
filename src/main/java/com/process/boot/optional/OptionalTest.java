@@ -14,7 +14,6 @@ public class OptionalTest {
 
   private static final Integer TYPE_LEGAL_HOLIDAYS = 1;
 
-
   private final Logger log = LoggerFactory.getLogger(getClass());
 
   @Test
