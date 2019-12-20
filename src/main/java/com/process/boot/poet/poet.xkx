@@ -1,0 +1,3 @@
+here are something about this package
+这个是看到缓存的时候 caffeine 的时候 里面 它的类生成方式 令我感到很神奇 竟然采用那种方式  然后就看到了javapoet
+生成java文件 还是class 文件来着 给忘了
