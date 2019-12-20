@@ -5,14 +5,14 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author xkx
- * @description do something
+ * @description test java poet generate code
  */
 public class PoetTest {
 
     private static final Logger log = LoggerFactory.getLogger(PoetTest.class);
 
     public static void main(String[] args) {
-        log.info("test poet tool :generate Class file by code");
+        log.info("test poet tool :generate ??  file by code");
         
     }
 
