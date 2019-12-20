@@ -1,6 +1,7 @@
 package com.process.boot.datetime;
 
 import java.time.LocalDate;
+import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,14 @@ public class Java8DateTimeTest {
     log.info("today date : {}", LocalDate.now());
     // 为什么会写下面这行呢 因为看linux 输出 stdout stderr 的时候 就想看一下这个
     System.err.println("date time now");
+
+    //
+    log.info("============show System properties=============");
+    Properties properties = System.getProperties();
+    properties.stringPropertyNames().forEach(propertyName -> {
+      String propertyValue = properties.getProperty(propertyName);
+      log.info("properties 中 ========>{}<========属性对应的值是=========>{}<==========", propertyName, propertyValue);
+    });
   }
 
 }
