@@ -1,0 +1,15 @@
+diff --git a/src/main/java/com/process/boot/datetime/testgitreset.xkx b/src/main/java/com/process/boot/datetime/testgitreset.xkx
+index b07d169..5d34019 100644
+--- a/src/main/java/com/process/boot/datetime/testgitreset.xkx
++++ b/src/main/java/com/process/boot/datetime/testgitreset.xkx
+@@ -4,4 +4,7 @@
+ 我就是想测试一下 git revert
+ 
+ 
+-我想测试一下 一天 patch
+\ No newline at end of file
++我想测试一下 git  patch
++
++测试 git patch 2nd
++这行代码是通过git apply patch 添加的 好用吧 在test.patch 中可以修改 如果要添加或者减少内容的 注意行号
+\ No newline at end of file
