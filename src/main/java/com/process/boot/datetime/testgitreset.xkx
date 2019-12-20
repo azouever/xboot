@@ -4,4 +4,7 @@
 我就是想测试一下 git revert
 
 
-我想测试一下 一天 patch
+我想测试一下 git  patch
+
+测试 git patch 2nd
+这行代码是通过git apply patch 添加的 好用吧 在test.patch 中可以修改 如果要添加或者减少内容的 注意行号
