@@ -1,0 +1,2 @@
+here are something about this package
+其实mybatis还是挺简单的 你想想嘛 它干了那些事情吧 不就是吧xml 解析解析 然后 组装成你想要的sql 然后 去和数据库交互
