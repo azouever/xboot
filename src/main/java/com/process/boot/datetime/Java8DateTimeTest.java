@@ -15,6 +15,7 @@ public class Java8DateTimeTest {
   public static void main(String[] args) {
     log.info("test java 8 date time operate api");
     log.info("today date : {}", LocalDate.now());
+    System.err.println("date time now");
   }
 
 }
