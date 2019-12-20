@@ -1,0 +1,4 @@
+here are something about this package
+对于定时任务 或者应该称之为 周期性执行的动作，我还特意看spring和unix 的区别
+spring中的支持到秒级，操作系统中支持到分钟级，但是应该也是可以配置的，是在不行就写shell，然后在shell中控制秒来
+进行一些操作
