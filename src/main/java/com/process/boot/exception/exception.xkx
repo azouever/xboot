@@ -1,0 +1,2 @@
+here are something about this package
+对于项目的异常应该如何处理，因为会牵扯到事务，但是到底事务里面的一组sql语句 是什么时候发送到mysql服务器呢
