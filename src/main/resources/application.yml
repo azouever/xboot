@@ -54,10 +54,13 @@ mybatis:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.process.boot.entity
 
-# 开发时使用mapper修改即使生效
+  # 开发时使用mapper修改即使生效
   refresh-mapper-enable: true
-  #configuration:
-    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #configuration:
+  #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #logging:
+  # level:
+  #  com.process.boot.mapper: debug
 logging:
   level:
-    com.process.boot.mapper: debug
+    root: info

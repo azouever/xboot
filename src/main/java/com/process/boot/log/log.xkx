@@ -1,0 +1,24 @@
+here are something about this package
+这个包主要是记录一些对于日志应该如何记录处理，对应软件开发来说，操作系统，软件应用使用过程中，对于我们来说都是一个黑盒，
+当出现问题的时候，打印在日志里面的关键信息就是我们解决问题的🔑
+日志的打印也需要很重要的技巧，什么地方打印，打印什么。
+
+在应用中日志的打印是如何实现的
+
+毕竟日志的打印最终是要落到磁盘上面去，会消耗io 可是写日志一般不是异步去处理吗 我不确定哈 我认为是
+
+对于springboot 应用，内部使用的是 spring-jcl 包里面儿的东西 其实就是apache commons logging  这也是个门面接口
+他也得去找具体的实现，
+所以一般直接引入web 的starter 那里面儿会引入一个 springboot -starter 里面 有logback jackson validator web webmvc tomcat
+
+
+
+那么spring-jcl 是咋整进去的呢? 好吧 他是spring-core包的 要是排除了 项目都起不来了。。。
+
+那么接下里就是要看logback的源码分析了 然后进行合适的配置 将自己的项目日志齐全的整到儿文件中 主要是目前我们服务器
+上面的日志有点极其不方便
+
+
+完事儿之后 给它整到elk中
+
+
