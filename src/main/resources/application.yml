@@ -1,8 +1,8 @@
 server:
-  port: 10089
+  port: 10088
 spring:
   application:
-    name: omit
+    name: xboot
   mvc:
     view:
       suffix: .html
@@ -44,6 +44,12 @@ spring:
     show-sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: 123456
+
 #    jedis:
 #      pool:
 #        max-active: 8

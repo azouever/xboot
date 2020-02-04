@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
@@ -17,7 +16,7 @@ public class SpringCronTest {
 
   private static final Logger log = LoggerFactory.getLogger(SpringCronTest.class);
 
-  @Scheduled(cron = "*/5 * * * * *")
+  //@Scheduled(cron = "*/5 * * * * *")
   public void secondTestExecute() {
     log.info("every 5 seconds execute task，now:{}",
         LocalDateTime.now().format(DateTimeFormatter.ofPattern(
