@@ -1,5 +1,5 @@
-2020-01-14 18:36:51.258 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 18:36:51.275 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 18:36:51.258 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 18:36:51.275 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 18:36:54.529 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-01-14 18:36:55.646 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
 2020-01-14 18:36:55.650 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.boot.actuate.amqp.RabbitHealthIndicator - Rabbit health check failed
@@ -61,8 +61,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
 	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
 	... 42 common frames omitted
-2020-01-14 18:38:27.707 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 18:38:27.717 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 18:38:27.707 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 18:38:27.717 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 18:38:31.186 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-01-14 18:38:32.467 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
 2020-01-14 18:38:32.470 [RMI TCP Connection(3)-172.16.8.162] WARN  o.s.boot.actuate.amqp.RabbitHealthIndicator - Rabbit health check failed
@@ -124,8 +124,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
 	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
 	... 42 common frames omitted
-2020-01-14 18:38:51.518 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 18:38:51.528 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 18:38:51.518 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 18:38:51.528 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 18:38:54.838 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-01-14 18:38:55.954 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
 2020-01-14 18:38:55.957 [RMI TCP Connection(1)-127.0.0.1] WARN  o.s.boot.actuate.amqp.RabbitHealthIndicator - Rabbit health check failed
@@ -187,8 +187,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
 	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
 	... 42 common frames omitted
-2020-01-14 20:51:50.569 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 20:51:50.588 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 20:51:50.569 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 20:51:50.588 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 20:51:58.171 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-01-14 20:52:00.025 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
 2020-01-14 20:52:00.032 [RMI TCP Connection(2)-192.168.3.19] WARN  o.s.boot.actuate.amqp.RabbitHealthIndicator - Rabbit health check failed
@@ -254,10 +254,10 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
 	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
 	... 46 common frames omitted
-2020-01-14 21:02:29.106 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 21:02:29.122 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 22:05:55.303 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 22:05:55.319 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 21:02:29.106 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 21:02:29.122 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 22:05:55.303 [main] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 22:05:55.319 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 22:05:58.644 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-01-14 22:06:00.922 [AMQP Connection 127.0.0.1:5672] WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
 2020-01-14 22:06:00.925 [RMI TCP Connection(1)-127.0.0.1] WARN  o.s.boot.actuate.amqp.RabbitHealthIndicator - Rabbit health check failed
@@ -319,20 +319,20 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994)
 	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462)
 	... 42 common frames omitted
-2020-01-14 22:20:11.925 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 22:20:11.942 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 22:20:11.925 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 22:20:11.942 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 22:20:18.280 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-14 22:24:23.251 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 22:24:23.267 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 22:24:23.251 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 22:24:23.267 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 22:24:27.725 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-14 22:28:10.871 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 22:28:10.895 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 22:28:10.871 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 22:28:10.895 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 22:28:15.403 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2020-01-14 22:34:12.362 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m28s485ms).
 2020-01-14 22:41:11.050 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s671ms).
 2020-01-14 22:44:57.836 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m12s293ms).
 2020-01-14 22:46:15.153 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s317ms).
 2020-01-14 22:48:00.689 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m894ms).
-2020-01-14 22:48:48.060 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
-2020-01-14 22:48:48.076 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.boot]' package. Please check your configuration.
+2020-01-14 22:48:48.060 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
+2020-01-14 22:48:48.076 [main] WARN  o.s.c.a.ClassPathScanningCandidateComponentProvider - No MyBatis mapper was found in '[com.process.xboot]' package. Please check your configuration.
 2020-01-14 22:48:52.717 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

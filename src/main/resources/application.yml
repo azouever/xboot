@@ -30,9 +30,9 @@ spring:
       #      pool:
       #        max-active: 8
       #        max-idle: 8
-      #        min-idle: 4
-      #        max-wait: 10000ms
-      #2.x版本中由于引入了不同客户端，需要指定配置哪种连接池
+    #        min-idle: 4
+    #        max-wait: 10000ms
+    #2.x版本中由于引入了不同客户端，需要指定配置哪种连接池
     #jedis客户端
   security:
     user:
@@ -45,10 +45,18 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   rabbitmq:
-      host: localhost
-      port: 5672
-      username: admin
-      password: 123456
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+    publisher-confirms: true
+    listener:
+      type: simple #default
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+
 
 #    jedis:
 #      pool:
@@ -62,7 +70,7 @@ mybatis:
 
   # 开发时使用mapper修改即使生效
   refresh-mapper-enable: true
-    #configuration:
+  #configuration:
   #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   #logging:
   # level:

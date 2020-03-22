@@ -1,6 +1,6 @@
-2020-01-14 22:23:30.311 [http-nio-10088-exec-8] ERROR com.process.boot.mq.MqController - exception happened when send message to rabbitmq:
+2020-01-14 22:23:30.311 [http-nio-10088-exec-8] ERROR com.process.xboot.mq.MqController - exception happened when send message to rabbitmq:
 java.lang.NullPointerException: null
-	at com.process.boot.mq.MqController.sendMsg(MqController.java:26)
+	at com.process.xboot.mq.MqController.sendMsg(MqController.java:26)
 	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
 	at java.lang.reflect.Method.invoke(Method.java:498)
@@ -107,9 +107,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2020-01-14 22:24:49.081 [http-nio-10088-exec-6] ERROR com.process.boot.mq.MqController - exception happened when send message to rabbitmq:
+2020-01-14 22:24:49.081 [http-nio-10088-exec-6] ERROR com.process.xboot.mq.MqController - exception happened when send message to rabbitmq:
 java.lang.NullPointerException: null
-	at com.process.boot.mq.MqController.sendMsg(MqController.java:26)
+	at com.process.xboot.mq.MqController.sendMsg(MqController.java:26)
 	at sun.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
 	at java.lang.reflect.Method.invoke(Method.java:498)
@@ -216,9 +216,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2020-01-14 22:29:40.177 [http-nio-10088-exec-1] ERROR com.process.boot.mq.MqController - exception happened when send message to rabbitmq:
+2020-01-14 22:29:40.177 [http-nio-10088-exec-1] ERROR com.process.xboot.mq.MqController - exception happened when send message to rabbitmq:
 java.lang.NullPointerException: null
-	at com.process.boot.mq.MqController.sendMsg(MqController.java:26)
+	at com.process.xboot.mq.MqController.sendMsg(MqController.java:26)
 	at sun.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
 	at java.lang.reflect.Method.invoke(Method.java:498)
@@ -282,9 +282,9 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2020-01-14 22:30:03.528 [http-nio-10088-exec-4] ERROR com.process.boot.mq.MqController - exception happened when send message to rabbitmq:
+2020-01-14 22:30:03.528 [http-nio-10088-exec-4] ERROR com.process.xboot.mq.MqController - exception happened when send message to rabbitmq:
 java.lang.NullPointerException: null
-	at com.process.boot.mq.MqController.sendMsg(MqController.java:26)
+	at com.process.xboot.mq.MqController.sendMsg(MqController.java:26)
 	at sun.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45005)
 	at java.lang.reflect.Method.invoke(Method.java:498)
