@@ -6,11 +6,11 @@ spring:
   mvc:
     view:
       suffix: .html
-  datasource:
-    url: jdbc:mysql:///leaf?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
-    username: root
-    password:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#  datasource:
+#    url: jdbc:mysql:///leaf?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
       #  redis:
       #    host: localhost
       #    port: 6379
@@ -44,18 +44,18 @@ spring:
     show-sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: admin
-    password: 123456
-    publisher-confirms: true
-    listener:
-      type: simple #default
-      direct:
-        acknowledge-mode: manual
-      simple:
-        acknowledge-mode: manual
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: admin
+#    password: 123456
+#    publisher-confirms: true
+#    listener:
+#      type: simple #default
+#      direct:
+#        acknowledge-mode: manual
+#      simple:
+#        acknowledge-mode: manual
 
 
 #    jedis:
@@ -64,9 +64,9 @@ spring:
 #        max-idle: 8
 #        min-idle: 4
 #        max-wait: 10000ms
-mybatis:
-  mapper-locations: classpath*:mapper/*.xml
-  type-aliases-package: com.process.boot.entity
+#mybatis:
+#  mapper-locations: classpath*:mapper/*.xml
+#  type-aliases-package: com.process.boot.entity
 
   # 开发时使用mapper修改即使生效
   refresh-mapper-enable: true
