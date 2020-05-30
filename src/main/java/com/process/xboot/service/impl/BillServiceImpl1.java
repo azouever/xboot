@@ -22,7 +22,7 @@ import java.util.UUID;
  * @description
  */
 @Slf4j
-@Service
+@Service("billService1")
 @EnableAsync
 public class BillServiceImpl1 implements BillService {
 

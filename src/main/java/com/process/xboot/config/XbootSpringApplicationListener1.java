@@ -19,6 +19,7 @@ public class XbootSpringApplicationListener1 implements ApplicationListener {
    */
   @Override
   public void onApplicationEvent(ApplicationEvent event) {
+    System.out.println(Thread.currentThread().getName());
     System.out.println(event.toString());
     System.out.println("XBOOT自定义监听器==1==响应事件");
   }

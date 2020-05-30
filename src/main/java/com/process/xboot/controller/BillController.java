@@ -84,4 +84,11 @@ public class BillController {
     BallTeam ballTeam = applicationContext.getBean(BallTeam.class);
     return ballTeam.getName();
   }
+
+  @GetMapping("/")
+  public String echo() {
+    BallTeam ballTeam = applicationContext.getBean(BallTeam.class);
+    return ballTeam.getName();
+  }
 }
+

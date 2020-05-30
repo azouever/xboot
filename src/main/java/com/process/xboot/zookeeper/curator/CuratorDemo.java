@@ -1,4 +1,4 @@
-package com.process.xboot.zookeeper;
+package com.process.xboot.zookeeper.curator;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
