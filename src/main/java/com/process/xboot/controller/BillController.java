@@ -41,7 +41,7 @@ public class BillController {
 
   @GetMapping("/find")
   public ResponseEntity findBills() {
-    billService.findBills();
+//    billService.findBills();
     log.info("billService的被代理的Class类型:{}", billService.getClass());
     log.info("billService的真实的Class类型:{}", ((TargetClassAware) billService).getTargetClass());
     log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billService));

@@ -223,6 +223,11 @@
       <artifactId>jol-core</artifactId>
       <version>${jol.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
@@ -246,6 +251,8 @@
           <include>**/*.js</include>
           <include>**/*.txt</include>
           <include>**/*.yml</include>
+          <include>**/*.ico</include>
+          <include>**/*.p12</include>
         </includes>
       </resource>
       <resource>

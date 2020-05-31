@@ -1,6 +1,7 @@
 package com.process.xboot.controller;
 
 
+import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -57,5 +59,22 @@ public class TestController {
     return new ModelAndView("redirect:/test/redirect/test_flash_attribute");
   }
 
+  @GetMapping("/suffix")
+  public ModelAndView viewSuffixTest(HttpServletRequest request) {
+    return new ModelAndView("redirect:/login.html");
+  }
+
+  @GetMapping("/bean")
+  public ResponseEntity webConfigBeanTest(HttpServletRequest request) {
+    Map<String, WebMvcConfigurer> mvcConfigurerMap = applicationContext
+        .getBeansOfType(WebMvcConfigurer.class);
+    mvcConfigurerMap.forEach((key, value) -> log.info(key + "------>" + value));
+    return ResponseEntity.ok().build();
+  }
+
+  @ModelAttribute
+  public void testExecute() {
+    log.info("---------method with `@ModelAttribute` executed-------");
+  }
 }
 

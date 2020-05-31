@@ -4,13 +4,14 @@ import com.process.xboot.config.security.provider.XbootAuthenticationProvider;
 import java.time.Duration;
 import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -23,6 +24,9 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 @Configuration
 public class XbootWebSecurityConfigurer
     extends WebSecurityConfigurerAdapter {
+
+  @Autowired
+  private AuthenticationEntryPoint entryPoint;
 
 //  @Override
 //  protected void configure(HttpSecurity http) throws Exception {
@@ -54,31 +58,42 @@ public class XbootWebSecurityConfigurer
 //        .formLogin().and()
 //        .httpBasic();
     // handle CSRF attempts
-    http.authorizeRequests()
-        .antMatchers("/**", "/bill/**", "/test/**", "/resources/**").permitAll()
+    http.httpBasic()
+        .authenticationEntryPoint(entryPoint)
+//        .and().formLogin().successHandler(new AuthenticationSuccessHandler() {
+//      @Override
+//      public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
+//          Authentication authentication) throws IOException, ServletException {
+//        response.sendRedirect("/");
+//      }
+//    })
+
+        .and().csrf().disable().authorizeRequests()
+        .antMatchers("/test/**", "/static/**", "/favicon.ico").permitAll()
         .antMatchers("/settle/**").hasRole("settle")
-//        .anyRequest().authenticated()
-        .and()
-//        .formLogin().loginPage("login.html")
-//        .permitAll()
+        .anyRequest().authenticated();
+//        .and().formLogin().successForwardUrl("/")
 //        .and()
-        .authenticationProvider(xbootAuthenticationProvider());
+//        .requiresChannel().anyRequest().requiresSecure();
+
+//    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.ALWAYS);
   }
 
   @Override
   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
+    super.configure(auth);
   }
 
   @Override
   public void configure(WebSecurity web) throws Exception {
-    web
-        .ignoring()
-        .antMatchers("/**");
+//    web
+//        .ignoring()
+//        .antMatchers("/**");
+    super.configure(web);
   }
 
 
-  @Bean
+  //  @Bean
   public AuthenticationProvider xbootAuthenticationProvider() {
     return new XbootAuthenticationProvider();
   }
