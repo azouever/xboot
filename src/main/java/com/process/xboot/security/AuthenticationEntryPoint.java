@@ -1,4 +1,4 @@
-package com.process.xboot.config.security;
+package com.process.xboot.security;
 
 import java.io.IOException;
 import java.io.PrintWriter;

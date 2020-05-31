@@ -1,6 +1,7 @@
-package com.process.xboot.config.security;
+package com.process.xboot.security;
 
-import com.process.xboot.config.security.provider.XbootAuthenticationProvider;
+import com.process.xboot.security.filter.JWTAuthenticationFilter;
+import com.process.xboot.security.provider.XbootAuthenticationProvider;
 import java.time.Duration;
 import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
@@ -11,6 +12,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -25,8 +27,17 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 public class XbootWebSecurityConfigurer
     extends WebSecurityConfigurerAdapter {
 
+  private UserDetailsServiceImpl userDetailsService;
+
+  public XbootWebSecurityConfigurer(UserDetailsServiceImpl userDetailsService) {
+    this.userDetailsService = userDetailsService;
+  }
+
   @Autowired
   private AuthenticationEntryPoint entryPoint;
+
+  @Autowired
+  private PasswordEncoder passwordEncoder;
 
 //  @Override
 //  protected void configure(HttpSecurity http) throws Exception {
@@ -58,8 +69,8 @@ public class XbootWebSecurityConfigurer
 //        .formLogin().and()
 //        .httpBasic();
     // handle CSRF attempts
-    http.httpBasic()
-        .authenticationEntryPoint(entryPoint)
+//    http.httpBasic()
+//        .authenticationEntryPoint(entryPoint)
 //        .and().formLogin().successHandler(new AuthenticationSuccessHandler() {
 //      @Override
 //      public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
@@ -67,21 +78,25 @@ public class XbootWebSecurityConfigurer
 //        response.sendRedirect("/");
 //      }
 //    })
-
-        .and().csrf().disable().authorizeRequests()
+    http.csrf().disable().authorizeRequests()
+//        .antMatchers(SIGN_UP_URL).permitAll()
         .antMatchers("/test/**", "/static/**", "/favicon.ico").permitAll()
         .antMatchers("/settle/**").hasRole("settle")
-        .anyRequest().authenticated();
+        .anyRequest().authenticated()
+        .and()
+        .addFilter(new JWTAuthenticationFilter(authenticationManager(), passwordEncoder));
+//        .addFilter(new JWTAuthorizationFilter(authenticationManager()));
 //        .and().formLogin().successForwardUrl("/")
 //        .and()
 //        .requiresChannel().anyRequest().requiresSecure();
 
-//    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.ALWAYS);
+//    http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
   }
 
   @Override
   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    super.configure(auth);
+    auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder);
+//    super.configure(auth);
   }
 
   @Override
