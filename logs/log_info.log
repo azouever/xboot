@@ -6066,3 +6066,1100 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2020-05-31 15:56:47.440 [Thread-44] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
 2020-05-31 15:56:47.443 [Thread-44] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 2020-05-31 15:56:47.445 [Thread-44] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:19:41.591 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 20131 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:19:41.594 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:19:42.689 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:19:42.690 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:19:42.840 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142ms. Found 1 repository interfaces.
+2020-05-31 22:19:42.853 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:19:42.855 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:19:42.886 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:19:42.886 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-05-31 22:19:43.675 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5fd10cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:19:44.061 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:19:44.077 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:19:44.085 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:19:44.085 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:19:44.195 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:19:44.195 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2544 ms
+2020-05-31 22:19:45.191 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:19:45.259 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:19:45.260 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:19:45.406 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:19:45.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:19:45.671 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:19:45.684 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:19:46.509 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:19:48.075 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:19:48.278 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:19:48.294 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:19:48.295 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:19:48.296 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:19:48.296 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:19:48.766 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e6f8beb, org.springframework.security.web.context.SecurityContextPersistenceFilter@34f8cee0, org.springframework.security.web.header.HeaderWriterFilter@acb16cd, org.springframework.security.web.authentication.logout.LogoutFilter@460d7e4a, com.process.xboot.security.filter.JWTAuthenticationFilter@1dcb10b3, com.process.xboot.security.filter.JWTAuthorizationFilter@7bfca354, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ea6601f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e5b7b61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15050e17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19731230, org.springframework.security.web.session.SessionManagementFilter@26d6399e, org.springframework.security.web.access.ExceptionTranslationFilter@1ef15e13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5700542]
+2020-05-31 22:19:49.002 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:19:49.014 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:19:49.014 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:19:49.015 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:19:49.016 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:19:49.016 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:19:49.016 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:19:49.016 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@410c9cad
+2020-05-31 22:19:49.038 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:19:49.077 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:19:49.180 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:19:49.180 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:19:49.199 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:19:49.205 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:19:49.205 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:19:49.205 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:19:49.229 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:19:49.232 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.29 seconds (JVM running for 12.214)
+2020-05-31 22:19:49.244 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:19:49.244 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:19:49.244 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:19:49.244 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:19:49.244 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:19:49.604 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:19:49.609 [RMI TCP Connection(3)-192.168.3.19] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:19:49.610 [RMI TCP Connection(3)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:19:49.622 [RMI TCP Connection(3)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-05-31 22:19:50.060 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#15ae31b:0/SimpleConnection@9e4c57b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55624]
+2020-05-31 22:19:50.229 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:19:50.230 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:27:11.316 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:27:11.320 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 22:27:11.321 [Thread-46] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 22:27:11.321 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 22:27:11.321 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:27:11.321 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 22:27:11.324 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:27:11.327 [Thread-46] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:27:20.722 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 25261 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:27:20.725 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:27:21.871 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:27:21.872 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:27:21.968 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 1 repository interfaces.
+2020-05-31 22:27:21.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:27:21.982 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:27:22.015 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:27:22.016 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:27:22.855 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7746544e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:27:23.251 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:27:23.266 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:27:23.274 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:27:23.275 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:27:23.386 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:27:23.386 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2599 ms
+2020-05-31 22:27:24.665 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:27:24.737 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:27:24.738 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:27:24.899 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:27:25.060 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:27:25.180 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:27:25.194 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:27:26.099 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:27:27.589 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:27:27.795 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:27:27.811 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:27:27.812 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:27:27.812 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:27:27.812 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:27:28.284 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d228131, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a8b30a3, org.springframework.security.web.header.HeaderWriterFilter@d0745b7, org.springframework.security.web.authentication.logout.LogoutFilter@c4231e8, com.process.xboot.security.filter.JWTAuthenticationFilter@6b3d3a9a, com.process.xboot.security.filter.JWTAuthorizationFilter@4b95a93b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@710e1af6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6503934c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b46d595, org.springframework.security.web.session.SessionManagementFilter@14f8ca45, org.springframework.security.web.access.ExceptionTranslationFilter@3b38395, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60264331]
+2020-05-31 22:27:28.490 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:27:28.504 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:27:28.504 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:27:28.505 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:27:28.506 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:27:28.507 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:27:28.507 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:27:28.507 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@43885360
+2020-05-31 22:27:28.529 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:27:28.567 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:27:28.678 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:27:28.678 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:27:28.737 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:27:28.742 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:27:28.742 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:27:28.742 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:27:28.765 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:27:28.767 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.712 seconds (JVM running for 12.514)
+2020-05-31 22:27:28.779 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:27:28.779 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:27:28.779 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:27:28.780 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:27:28.780 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:27:29.103 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:27:29.108 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:27:29.108 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:27:29.118 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-05-31 22:27:31.269 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4faaff61:0/SimpleConnection@67ee8fa4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55745]
+2020-05-31 22:27:31.453 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:27:31.456 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:29:37.613 [http-nio-8098-exec-2] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-31 22:34:38.217 [Thread-47] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:34:38.225 [Thread-47] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 22:34:38.226 [Thread-47] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 22:34:38.226 [Thread-47] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 22:34:38.226 [Thread-47] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:34:38.226 [Thread-47] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 22:34:38.228 [Thread-47] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:34:38.230 [Thread-47] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:34:46.989 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 30260 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:34:46.992 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:34:48.152 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:34:48.154 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:34:48.254 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92ms. Found 1 repository interfaces.
+2020-05-31 22:34:48.268 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:34:48.270 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:34:48.302 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:34:48.302 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:34:49.165 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d29f25c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:34:49.581 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:34:49.599 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:34:49.607 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:34:49.608 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:34:49.721 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:34:49.722 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2674 ms
+2020-05-31 22:34:50.741 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:34:50.809 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:34:50.811 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:34:50.961 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:34:51.115 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:34:51.233 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:34:51.247 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:34:52.113 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:34:53.659 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:34:53.861 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:34:53.878 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:34:53.879 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:34:53.879 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:34:53.879 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:34:54.377 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2aec7d12, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cf97fb4, org.springframework.security.web.header.HeaderWriterFilter@60b84649, org.springframework.security.web.authentication.logout.LogoutFilter@7b1c2bf7, com.process.xboot.security.filter.JWTAuthenticationFilter@347573ac, com.process.xboot.security.filter.JWTAuthorizationFilter@486ec456, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d113d9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@661a26a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63b994f4, org.springframework.security.web.session.SessionManagementFilter@236e2729, org.springframework.security.web.access.ExceptionTranslationFilter@7b0ad09a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19556353]
+2020-05-31 22:34:54.577 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:34:54.591 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:34:54.591 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:34:54.592 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:34:54.593 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:34:54.593 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:34:54.593 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:34:54.593 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2393b885
+2020-05-31 22:34:54.614 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:34:54.652 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:34:54.765 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:34:54.765 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:34:54.821 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:34:54.825 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:34:54.826 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:34:54.826 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:34:54.849 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:34:54.852 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.5 seconds (JVM running for 12.528)
+2020-05-31 22:34:54.865 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:34:54.865 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:34:54.865 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:34:54.865 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:34:54.866 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:34:55.036 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:34:55.042 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:34:55.042 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:34:55.053 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-05-31 22:34:56.184 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#408b2ae2:0/SimpleConnection@7a29424b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55871]
+2020-05-31 22:34:56.354 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:34:56.356 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:38:42.456 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:38:42.463 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 22:38:42.463 [Thread-46] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 22:38:42.464 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 22:38:42.464 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:38:42.464 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 22:38:42.467 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:38:42.471 [Thread-46] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:38:54.856 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 33031 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:38:54.859 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:38:55.917 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:38:55.919 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:38:56.062 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132ms. Found 1 repository interfaces.
+2020-05-31 22:38:56.079 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:38:56.081 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:38:56.122 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:38:56.122 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2020-05-31 22:38:56.936 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9875aacc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:38:57.459 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:38:57.475 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:38:57.483 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:38:57.483 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:38:57.594 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:38:57.594 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2678 ms
+2020-05-31 22:38:58.599 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:38:58.664 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:38:58.665 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:38:58.809 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:38:58.957 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:38:59.073 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:38:59.085 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:38:59.923 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:39:01.425 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:39:01.628 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:39:01.644 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:39:01.645 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:39:01.645 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:39:01.646 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:39:02.126 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e7558ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@305db32d, org.springframework.security.web.header.HeaderWriterFilter@7f5df538, org.springframework.security.web.authentication.logout.LogoutFilter@661de25, com.process.xboot.security.filter.JWTAuthenticationFilter@39fa3fc5, com.process.xboot.security.filter.JWTAuthorizationFilter@5d35e169, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34ef6c16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f04ff02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23b40e2a, org.springframework.security.web.session.SessionManagementFilter@54669c4, org.springframework.security.web.access.ExceptionTranslationFilter@4036d9cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@463ffc84]
+2020-05-31 22:39:02.328 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:39:02.343 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:39:02.343 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:39:02.344 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:39:02.345 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:39:02.345 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:39:02.345 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:39:02.345 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@36f6418c
+2020-05-31 22:39:02.367 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:39:02.410 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:39:02.517 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:39:02.518 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:39:02.539 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:39:02.543 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:39:02.543 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:39:02.544 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:39:02.566 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:39:02.569 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.352 seconds (JVM running for 12.156)
+2020-05-31 22:39:02.581 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:39:02.581 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:39:02.581 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:39:02.581 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:39:02.582 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:39:02.958 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:39:02.963 [RMI TCP Connection(1)-192.168.3.19] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:39:02.964 [RMI TCP Connection(1)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:39:02.974 [RMI TCP Connection(1)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-05-31 22:39:04.036 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3fe11091:0/SimpleConnection@16a495e6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55938]
+2020-05-31 22:39:04.204 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:39:04.205 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:39:48.168 [http-nio-8098-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-31 22:42:00.468 [Thread-46] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:42:00.485 [Thread-46] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2020-05-31 22:42:00.500 [Thread-46] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:42:00.515 [Thread-46] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2020-05-31 22:42:00.525 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:42:00.530 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 22:42:00.531 [Thread-46] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 22:42:00.531 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 22:42:00.531 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:42:00.532 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 22:42:00.534 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:42:00.536 [Thread-46] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:42:00.569 [Thread-46] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:42:00.589 [Thread-46] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:42:01.748 [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown initiated...
+2020-05-31 22:42:01.750 [Thread-46] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown completed.
+2020-05-31 22:42:20.717 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 35344 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:42:20.720 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:42:21.805 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:42:21.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:42:21.903 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89ms. Found 1 repository interfaces.
+2020-05-31 22:42:21.916 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:42:21.917 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:42:21.950 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:42:21.950 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:42:22.738 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f385864e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:42:23.127 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:42:23.143 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:42:23.151 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:42:23.151 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:42:23.259 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:42:23.259 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2479 ms
+2020-05-31 22:42:24.270 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:42:24.342 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:42:24.343 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:42:24.485 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:42:24.631 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:42:24.746 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:42:24.758 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:42:25.138 [main] INFO  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.process.xboot.entity.ApplicationUser (class must be instantiated by Interceptor)
+2020-05-31 22:42:25.588 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:42:27.015 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:42:27.213 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:42:27.228 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:42:27.229 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:42:27.229 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:42:27.230 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:42:27.685 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46e241b, org.springframework.security.web.context.SecurityContextPersistenceFilter@742d195f, org.springframework.security.web.header.HeaderWriterFilter@3bcb3510, org.springframework.security.web.authentication.logout.LogoutFilter@53cde2dc, com.process.xboot.security.filter.JWTAuthenticationFilter@75015a3a, com.process.xboot.security.filter.JWTAuthorizationFilter@3f126927, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29b5ef59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e5148b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46fb460a, org.springframework.security.web.session.SessionManagementFilter@223cd181, org.springframework.security.web.access.ExceptionTranslationFilter@89f4d09, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d2c10dd]
+2020-05-31 22:42:27.881 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:42:27.892 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:42:27.893 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:42:27.894 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:42:27.895 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:42:27.895 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:42:27.895 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:42:27.896 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2e29a193
+2020-05-31 22:42:27.917 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:42:27.955 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:42:28.062 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:42:28.062 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:42:28.081 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:42:28.085 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:42:28.085 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:42:28.085 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:42:28.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:42:28.149 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.072 seconds (JVM running for 11.913)
+2020-05-31 22:42:28.161 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:42:28.161 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:42:28.161 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:42:28.161 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:42:28.161 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:42:28.209 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:42:28.215 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:42:28.215 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:42:28.227 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-05-31 22:42:30.365 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#62ec4146:0/SimpleConnection@7c1e60e7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56010]
+2020-05-31 22:42:30.532 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:42:30.533 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:43:32.314 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:43:32.318 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 22:43:32.319 [Thread-45] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 22:43:32.319 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 22:43:32.319 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:43:32.319 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 22:43:32.322 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:43:32.325 [Thread-45] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:43:42.321 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 36265 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:43:42.323 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:43:43.336 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:43:43.337 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:43:43.443 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95ms. Found 1 repository interfaces.
+2020-05-31 22:43:43.456 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:43:43.457 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:43:43.492 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:43:43.492 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2020-05-31 22:43:44.200 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f5ae421] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:43:44.709 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:43:44.725 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:43:44.733 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:43:44.734 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:43:44.840 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:43:44.841 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2460 ms
+2020-05-31 22:43:45.796 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:43:45.865 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:43:45.866 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:43:46.006 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:43:46.158 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:43:46.275 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:43:46.288 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:43:47.045 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:43:48.502 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:43:48.693 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:43:48.709 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:43:48.710 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:43:48.710 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:43:48.710 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:43:49.143 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@618ffc7a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cd4e20b, org.springframework.security.web.header.HeaderWriterFilter@ae04104, org.springframework.security.web.authentication.logout.LogoutFilter@5c15c93a, com.process.xboot.security.filter.JWTAuthenticationFilter@66d43e76, com.process.xboot.security.filter.JWTAuthorizationFilter@3c4c595e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50357562, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75989b13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44572f11, org.springframework.security.web.session.SessionManagementFilter@31f608d2, org.springframework.security.web.access.ExceptionTranslationFilter@30c1a903, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e253fa3]
+2020-05-31 22:43:49.335 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:43:49.346 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:43:49.346 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:43:49.347 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:43:49.349 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:43:49.349 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:43:49.349 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:43:49.350 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6f18329
+2020-05-31 22:43:49.372 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:43:49.410 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:43:49.513 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:43:49.513 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:43:49.530 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:43:49.534 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:43:49.534 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:43:49.534 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:43:49.558 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:43:49.560 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 7.84 seconds (JVM running for 11.754)
+2020-05-31 22:43:49.572 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:43:49.572 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:43:49.572 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:43:49.572 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:43:49.572 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:43:49.790 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:43:49.794 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:43:49.794 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:43:49.807 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-05-31 22:43:49.827 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2da0770:0/SimpleConnection@2e8d7984 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56038]
+2020-05-31 22:43:50.001 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:43:50.003 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:45:48.296 [quartzScheduler_QuartzSchedulerThread] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:45:48.311 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:45:48.317 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 22:45:48.318 [Thread-45] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 22:45:48.318 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 22:45:48.318 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 22:45:48.319 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 22:45:48.322 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:45:48.325 [Thread-45] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:45:48.340 [quartzScheduler_QuartzSchedulerThread] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44ms. Found 0 repository interfaces.
+2020-05-31 22:45:48.371 [quartzScheduler_QuartzSchedulerThread] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:45:48.390 [quartzScheduler_QuartzSchedulerThread] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2020-05-31 22:45:56.925 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 37789 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:45:56.928 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:45:58.034 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:45:58.035 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:45:58.128 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85ms. Found 1 repository interfaces.
+2020-05-31 22:45:58.141 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:45:58.142 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:45:58.174 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:45:58.174 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:45:58.983 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4cd69d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:45:59.380 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:45:59.397 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:45:59.411 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:45:59.412 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:45:59.524 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:45:59.525 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2531 ms
+2020-05-31 22:46:00.557 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:46:00.626 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:46:00.627 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:46:00.775 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:46:00.921 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:46:01.037 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:46:01.050 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:46:01.877 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:46:02.969 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:46:02.983 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown initiated...
+2020-05-31 22:46:02.987 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown completed.
+2020-05-31 22:46:02.990 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-05-31 22:46:03.006 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-31 22:46:54.955 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 38454 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:46:54.959 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:46:56.003 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:46:56.004 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:46:56.116 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103ms. Found 1 repository interfaces.
+2020-05-31 22:46:56.129 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:46:56.130 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:46:56.161 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:46:56.161 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:46:56.946 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$707ff39d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:46:57.326 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:46:57.341 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:46:57.349 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:46:57.350 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:46:57.457 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:46:57.457 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2436 ms
+2020-05-31 22:46:58.448 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:46:58.510 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:46:58.511 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:46:58.646 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:46:58.786 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:46:58.897 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:46:58.909 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:46:59.675 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:47:00.735 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:47:00.748 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown initiated...
+2020-05-31 22:47:00.751 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown completed.
+2020-05-31 22:47:00.755 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-05-31 22:47:00.770 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-31 22:48:26.238 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 39528 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:48:26.241 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:48:27.277 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:48:27.278 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:48:27.371 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 1 repository interfaces.
+2020-05-31 22:48:27.384 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:48:27.385 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:48:27.416 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:48:27.417 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:48:28.190 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c58c7eba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:48:28.578 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:48:28.594 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:48:28.602 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:48:28.602 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:48:28.708 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:48:28.708 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2410 ms
+2020-05-31 22:48:29.701 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:48:29.764 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:48:29.765 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:48:29.900 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:48:30.042 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:48:30.154 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:48:30.167 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:48:30.947 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:48:32.380 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:48:32.571 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:48:32.587 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:48:32.588 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:48:32.589 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:48:32.589 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:48:33.038 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1235aa76, org.springframework.security.web.context.SecurityContextPersistenceFilter@5661f2b7, org.springframework.security.web.header.HeaderWriterFilter@24b83648, org.springframework.security.web.authentication.logout.LogoutFilter@4939730c, com.process.xboot.security.filter.JWTAuthenticationFilter@4a242227, com.process.xboot.security.filter.JWTAuthorizationFilter@76da1984, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fa3ea4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5743cf1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62b81449, org.springframework.security.web.session.SessionManagementFilter@6d0c2990, org.springframework.security.web.access.ExceptionTranslationFilter@561deed3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5950dbfc]
+2020-05-31 22:48:33.239 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:48:33.253 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:48:33.253 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:48:33.254 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:48:33.255 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:48:33.255 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:48:33.255 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:48:33.256 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@612e1ba2
+2020-05-31 22:48:33.279 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:48:33.320 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:48:33.433 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:48:33.433 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:48:33.450 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:48:33.454 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:48:33.454 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:48:33.454 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:48:33.663 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:48:33.666 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.005 seconds (JVM running for 11.831)
+2020-05-31 22:48:33.678 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:48:33.678 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:48:33.678 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:48:33.679 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:48:33.679 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:48:33.817 [RMI TCP Connection(1)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:48:33.822 [RMI TCP Connection(2)-192.168.3.19] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:48:33.822 [RMI TCP Connection(2)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:48:33.833 [RMI TCP Connection(2)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-05-31 22:48:35.987 [RMI TCP Connection(1)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7d1cfe97:0/SimpleConnection@784172bd [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56128]
+2020-05-31 22:48:36.157 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:48:36.158 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 22:49:31.124 [Thread-45] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:49:31.159 [Thread-45] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 repository interfaces.
+2020-05-31 22:49:31.184 [Thread-45] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:49:31.202 [Thread-45] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2020-05-31 22:49:41.494 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 40387 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 22:49:41.497 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 22:49:42.519 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:49:42.521 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:49:42.633 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104ms. Found 1 repository interfaces.
+2020-05-31 22:49:42.646 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 22:49:42.647 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 22:49:42.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 22:49:42.678 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 22:49:43.474 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d75e651] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 22:49:43.856 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 22:49:43.871 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:49:43.879 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 22:49:43.880 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 22:49:43.989 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 22:49:43.990 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2436 ms
+2020-05-31 22:49:44.977 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 22:49:45.040 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 22:49:45.041 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 22:49:45.174 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 22:49:45.314 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 22:49:45.424 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 22:49:45.437 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 22:49:46.215 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 22:49:47.630 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 22:49:47.820 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 22:49:47.835 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 22:49:47.836 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 22:49:47.837 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 22:49:47.838 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 22:49:48.287 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50187377, org.springframework.security.web.context.SecurityContextPersistenceFilter@10832790, org.springframework.security.web.header.HeaderWriterFilter@65b6b7e9, org.springframework.security.web.authentication.logout.LogoutFilter@b27b17d, com.process.xboot.security.filter.JWTAuthenticationFilter@50b8504b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f673679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5afc4816, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c6664c4, org.springframework.security.web.session.SessionManagementFilter@6572bcb5, org.springframework.security.web.access.ExceptionTranslationFilter@504863d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e06d88]
+2020-05-31 22:49:48.484 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 22:49:48.497 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 22:49:48.498 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 22:49:48.499 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 22:49:48.500 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 22:49:48.500 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 22:49:48.500 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 22:49:48.500 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@264cef82
+2020-05-31 22:49:48.521 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 22:49:48.561 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 22:49:48.672 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 22:49:48.672 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 22:49:48.690 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 22:49:48.694 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:49:48.694 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 22:49:48.694 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 22:49:48.754 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 22:49:48.757 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 7.88 seconds (JVM running for 11.731)
+2020-05-31 22:49:48.769 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:49:48.769 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:49:48.769 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 22:49:48.769 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:49:48.770 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 22:49:49.086 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 22:49:49.091 [RMI TCP Connection(1)-192.168.3.19] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 22:49:49.091 [RMI TCP Connection(1)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 22:49:49.103 [RMI TCP Connection(1)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-05-31 22:49:49.126 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4bc4ec43:0/SimpleConnection@451a6983 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56158]
+2020-05-31 22:49:49.303 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 22:49:49.305 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 23:00:29.840 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:00:29.845 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 23:00:29.845 [Thread-45] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 23:00:29.845 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 23:00:29.845 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:00:29.847 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 23:00:29.850 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:00:29.854 [Thread-45] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:01:43.590 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 48463 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 23:01:43.593 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 23:01:44.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:01:44.638 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:01:44.750 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102ms. Found 1 repository interfaces.
+2020-05-31 23:01:44.763 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:01:44.764 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:01:44.794 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 23:01:44.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 23:01:45.585 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e254119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 23:01:45.971 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 23:01:45.987 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:01:45.995 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 23:01:45.995 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 23:01:46.102 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 23:01:46.103 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2450 ms
+2020-05-31 23:01:47.114 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 23:01:47.179 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 23:01:47.180 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 23:01:47.319 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 23:01:47.462 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 23:01:47.572 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 23:01:47.585 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 23:01:48.395 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:01:49.842 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:01:50.041 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 23:01:50.058 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 23:01:50.059 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 23:01:50.060 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 23:01:50.060 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 23:01:50.664 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51e27505, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fabe964, org.springframework.security.web.header.HeaderWriterFilter@280b0df9, org.springframework.security.web.authentication.logout.LogoutFilter@35038f9d, com.process.xboot.security.filter.JWTAuthenticationFilter@13190f44, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1881fb7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@216ccf2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@451426ac, org.springframework.security.web.session.SessionManagementFilter@549426d8, org.springframework.security.web.access.ExceptionTranslationFilter@8d70fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4230d4f]
+2020-05-31 23:01:50.865 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 23:01:50.878 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 23:01:50.878 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 23:01:50.879 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 23:01:50.880 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 23:01:50.880 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 23:01:50.880 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 23:01:50.881 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@19b183bd
+2020-05-31 23:01:50.905 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 23:01:50.944 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 23:01:51.053 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 23:01:51.054 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 23:01:51.072 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:01:51.077 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:01:51.077 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 23:01:51.077 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:01:51.102 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 23:01:51.105 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.113 seconds (JVM running for 12.084)
+2020-05-31 23:01:51.119 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:01:51.119 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:01:51.119 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 23:01:51.119 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:01:51.119 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:01:51.597 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 23:01:51.602 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 23:01:51.602 [RMI TCP Connection(5)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 23:01:51.650 [RMI TCP Connection(5)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 48 ms
+2020-05-31 23:01:53.822 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5edaa572:0/SimpleConnection@684f57a6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56283]
+2020-05-31 23:01:54.009 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 23:01:54.011 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 23:03:52.042 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:03:52.047 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 23:03:52.047 [Thread-46] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 23:03:52.047 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 23:03:52.047 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:03:52.048 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 23:03:52.050 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:03:52.053 [Thread-46] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:04:01.508 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 50038 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 23:04:01.515 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 23:04:02.587 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:04:02.588 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:04:02.704 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107ms. Found 1 repository interfaces.
+2020-05-31 23:04:02.718 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:04:02.719 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:04:02.750 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 23:04:02.750 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 23:04:03.584 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9d6a720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 23:04:03.989 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 23:04:04.005 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:04:04.014 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 23:04:04.014 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 23:04:04.128 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 23:04:04.128 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2549 ms
+2020-05-31 23:04:05.125 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 23:04:05.188 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 23:04:05.189 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 23:04:05.327 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 23:04:05.469 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 23:04:05.580 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 23:04:05.593 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 23:04:06.379 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:04:07.819 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:04:08.020 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 23:04:08.038 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 23:04:08.038 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 23:04:08.039 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 23:04:08.039 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 23:04:08.642 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fabe964, org.springframework.security.web.context.SecurityContextPersistenceFilter@1460c688, org.springframework.security.web.header.HeaderWriterFilter@53eb6ac5, org.springframework.security.web.authentication.logout.LogoutFilter@1c109c34, com.process.xboot.security.filter.JWTAuthenticationFilter@6dd6a2f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3468198d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66c8c875, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1881fb7d, org.springframework.security.web.session.SessionManagementFilter@6797b494, org.springframework.security.web.access.ExceptionTranslationFilter@3b9a0b15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f0938c4]
+2020-05-31 23:04:08.850 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 23:04:08.862 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 23:04:08.862 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 23:04:08.863 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 23:04:08.864 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 23:04:08.865 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 23:04:08.865 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 23:04:08.865 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4a7bb0a6
+2020-05-31 23:04:08.887 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 23:04:08.927 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 23:04:09.036 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 23:04:09.036 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 23:04:09.055 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:04:09.060 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:04:09.061 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 23:04:09.061 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:04:09.195 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 23:04:09.197 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.29 seconds (JVM running for 12.181)
+2020-05-31 23:04:09.209 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:04:09.209 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:04:09.209 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 23:04:09.210 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:04:09.210 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:04:09.593 [RMI TCP Connection(4)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 23:04:09.597 [RMI TCP Connection(5)-192.168.3.19] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 23:04:09.598 [RMI TCP Connection(5)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 23:04:09.610 [RMI TCP Connection(5)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-05-31 23:04:09.631 [RMI TCP Connection(4)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5408fca1:0/SimpleConnection@5c36709 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56319]
+2020-05-31 23:04:09.805 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 23:04:09.807 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 23:06:43.709 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:06:43.713 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 23:06:43.713 [Thread-46] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 23:06:43.713 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 23:06:43.713 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:06:43.714 [Thread-46] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 23:06:43.716 [Thread-46] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:06:43.719 [Thread-46] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:06:53.992 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 51976 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 23:06:53.995 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 23:06:55.036 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:06:55.037 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:06:55.136 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91ms. Found 1 repository interfaces.
+2020-05-31 23:06:55.149 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:06:55.150 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:06:55.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 23:06:55.181 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 23:06:55.964 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e5cbe9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 23:06:56.341 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 23:06:56.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:06:56.365 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 23:06:56.365 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 23:06:56.471 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 23:06:56.471 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2419 ms
+2020-05-31 23:06:57.452 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 23:06:57.514 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 23:06:57.515 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 23:06:57.653 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 23:06:57.791 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 23:06:57.904 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 23:06:57.916 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 23:06:58.694 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:07:00.110 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:07:00.300 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 23:07:00.315 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 23:07:00.315 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 23:07:00.316 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 23:07:00.316 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 23:07:00.933 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59e0cb10, org.springframework.security.web.context.SecurityContextPersistenceFilter@30a4749a, org.springframework.security.web.header.HeaderWriterFilter@5b5954bd, org.springframework.security.web.authentication.logout.LogoutFilter@71140b11, com.process.xboot.security.filter.JWTAuthenticationFilter@765569a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56cdf69b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a27077c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19932a6a, org.springframework.security.web.session.SessionManagementFilter@5035ce0b, org.springframework.security.web.access.ExceptionTranslationFilter@40bb73ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50357562]
+2020-05-31 23:07:01.140 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 23:07:01.153 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 23:07:01.153 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 23:07:01.154 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 23:07:01.155 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 23:07:01.155 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 23:07:01.156 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 23:07:01.156 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7d4069b0
+2020-05-31 23:07:01.177 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 23:07:01.215 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 23:07:01.326 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 23:07:01.326 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 23:07:01.381 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:07:01.384 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:07:01.385 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 23:07:01.385 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:07:01.407 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 23:07:01.409 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.006 seconds (JVM running for 11.877)
+2020-05-31 23:07:01.421 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:07:01.421 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:07:01.422 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 23:07:01.422 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:07:01.422 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:07:01.545 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 23:07:01.549 [RMI TCP Connection(3)-192.168.3.19] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 23:07:01.550 [RMI TCP Connection(3)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 23:07:01.562 [RMI TCP Connection(3)-192.168.3.19] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-05-31 23:07:03.638 [RMI TCP Connection(2)-192.168.3.19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6905d030:0/SimpleConnection@3830537f [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56363]
+2020-05-31 23:07:03.832 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 23:07:03.835 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 23:08:07.718 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:08:07.724 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 23:08:07.725 [Thread-45] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 23:08:07.725 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 23:08:07.725 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:08:07.725 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 23:08:07.728 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:08:07.731 [Thread-45] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:08:16.364 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 52907 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 23:08:16.366 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 23:08:17.429 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:08:17.430 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:08:17.523 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 1 repository interfaces.
+2020-05-31 23:08:17.536 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:08:17.537 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:08:17.569 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 23:08:17.569 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 23:08:18.361 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7df6774a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 23:08:18.738 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 23:08:18.753 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:08:18.761 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 23:08:18.762 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 23:08:18.868 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 23:08:18.869 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2446 ms
+2020-05-31 23:08:19.854 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 23:08:19.919 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 23:08:19.920 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 23:08:20.052 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 23:08:20.195 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 23:08:20.305 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 23:08:20.317 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 23:08:21.079 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:08:22.521 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:08:22.723 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 23:08:22.740 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 23:08:22.742 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 23:08:22.742 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 23:08:22.743 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 23:08:23.389 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@89f4d09, org.springframework.security.web.context.SecurityContextPersistenceFilter@4864adaa, org.springframework.security.web.header.HeaderWriterFilter@7e5e5bf9, org.springframework.security.web.authentication.logout.LogoutFilter@e0c6e2c, com.process.xboot.security.filter.JWTAuthenticationFilter@4061455, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6efa59d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ec2caf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bcb3510, org.springframework.security.web.session.SessionManagementFilter@4f843511, org.springframework.security.web.access.ExceptionTranslationFilter@4a9cd434, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18432787]
+2020-05-31 23:08:23.587 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 23:08:23.600 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 23:08:23.600 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 23:08:23.601 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 23:08:23.602 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 23:08:23.602 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 23:08:23.602 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 23:08:23.602 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@17598d70
+2020-05-31 23:08:23.625 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 23:08:23.666 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 23:08:23.781 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 23:08:23.782 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 23:08:23.834 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:08:23.838 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:08:23.839 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 23:08:23.839 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:08:23.860 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 23:08:23.863 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.102 seconds (JVM running for 12.093)
+2020-05-31 23:08:23.875 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:08:23.876 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:08:23.876 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 23:08:23.876 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:08:23.876 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:08:23.953 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 23:08:23.958 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 23:08:23.958 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 23:08:23.969 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-05-31 23:08:23.990 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1822a61b:0/SimpleConnection@33b29fd2 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56393]
+2020-05-31 23:08:24.162 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 23:08:24.164 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 23:10:22.851 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:10:22.855 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 23:10:22.855 [Thread-45] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 23:10:22.855 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 23:10:22.855 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:10:22.857 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 23:10:22.859 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:10:22.862 [Thread-45] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:10:23.978 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown initiated...
+2020-05-31 23:10:23.981 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown completed.
+2020-05-31 23:10:33.394 [main] INFO  com.process.xboot.XbootApplication - Starting XbootApplication on kai.local with PID 54457 (/Users/xukaixuan/IdeaProjects/xboot/target/classes started by xukaixuan in /Users/xukaixuan/IdeaProjects/xboot)
+2020-05-31 23:10:33.397 [main] INFO  com.process.xboot.XbootApplication - No active profile set, falling back to default profiles: default
+2020-05-31 23:10:34.447 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:10:34.447 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:10:34.540 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85ms. Found 1 repository interfaces.
+2020-05-31 23:10:34.553 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-31 23:10:34.554 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-31 23:10:34.586 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.process.xboot.repository.ApplicationUserRepository.
+2020-05-31 23:10:34.586 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-31 23:10:35.381 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b8db28f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-31 23:10:35.766 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8098 (http)
+2020-05-31 23:10:35.782 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:10:35.790 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-31 23:10:35.791 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-31 23:10:35.899 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-31 23:10:35.899 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2443 ms
+2020-05-31 23:10:36.873 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-31 23:10:36.938 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-05-31 23:10:36.940 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-05-31 23:10:37.071 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-05-31 23:10:37.212 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Starting...
+2020-05-31 23:10:37.322 [main] INFO  com.zaxxer.hikari.HikariDataSource - sa - Start completed.
+2020-05-31 23:10:37.334 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-31 23:10:38.131 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:10:39.577 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:10:39.773 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-31 23:10:39.790 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-31 23:10:39.790 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-31 23:10:39.791 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-31 23:10:39.791 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-05-31 23:10:40.444 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bbcb801, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cea18bc, org.springframework.security.web.header.HeaderWriterFilter@693d61c1, org.springframework.security.web.authentication.logout.LogoutFilter@459dad43, com.process.xboot.security.filter.JWTAuthenticationFilter@44fcf2b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53a95258, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78941f94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c52060, org.springframework.security.web.session.SessionManagementFilter@397411e1, org.springframework.security.web.access.ExceptionTranslationFilter@264888e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@574dfb11]
+2020-05-31 23:10:40.643 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-05-31 23:10:40.657 [main] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-05-31 23:10:40.657 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2020-05-31 23:10:40.658 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-05-31 23:10:40.659 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-05-31 23:10:40.659 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-05-31 23:10:40.659 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2020-05-31 23:10:40.659 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2b868210
+2020-05-31 23:10:40.681 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-31 23:10:40.719 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-05-31 23:10:40.832 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2020-05-31 23:10:40.832 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-05-31 23:10:40.886 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8098"]
+2020-05-31 23:10:40.891 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:10:40.891 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - 文件监控启动成功！
+2020-05-31 23:10:40.891 [pool-7-thread-1] INFO  com.process.xboot.config.fs.FileSystemListener - ===================
+2020-05-31 23:10:40.913 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8098 (http) with context path ''
+2020-05-31 23:10:40.916 [main] INFO  com.process.xboot.XbootApplication - Started XbootApplication in 8.13 seconds (JVM running for 12.051)
+2020-05-31 23:10:40.927 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:10:40.927 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:10:40.928 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - ---------------xboot----application----started-------------------
+2020-05-31 23:10:40.928 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:10:40.928 [main] INFO  c.p.x.config.spring_boot.runner.AppStartupRunner - -----------------------------------------------------------------
+2020-05-31 23:10:41.003 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2020-05-31 23:10:41.007 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-31 23:10:41.007 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-31 23:10:41.017 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-05-31 23:10:42.108 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#54fd5759:0/SimpleConnection@1af18f5a [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56424]
+2020-05-31 23:10:42.270 [parallel-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-05-31 23:10:42.272 [parallel-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-05-31 23:20:29.042 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:20:29.047 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-05-31 23:20:29.047 [Thread-45] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2020-05-31 23:20:29.047 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-05-31 23:20:29.048 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-05-31 23:20:29.048 [Thread-45] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-05-31 23:20:29.051 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 23:20:29.054 [Thread-45] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-31 23:20:30.179 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown initiated...
+2020-05-31 23:20:30.182 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - sa - Shutdown completed.
