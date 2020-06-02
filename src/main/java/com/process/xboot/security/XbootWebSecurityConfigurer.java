@@ -78,12 +78,13 @@ public class XbootWebSecurityConfigurer
 //        response.sendRedirect("/");
 //      }
 //    })
-    http.csrf().disable().authorizeRequests()
+    http.antMatcher("/find/*").csrf().disable().authorizeRequests()
 //        .antMatchers(SIGN_UP_URL).permitAll()
         .antMatchers("/test/**", "/static/**", "/favicon.ico").permitAll()
         .antMatchers("/settle/**").hasRole("settle")
         .anyRequest().authenticated()
         .and()
+        .formLogin().and()
         .addFilter(new JWTAuthenticationFilter(authenticationManager(), passwordEncoder));
 //        .addFilter(new JWTAuthorizationFilter(authenticationManager()));
 //        .and().formLogin().successForwardUrl("/")
@@ -101,10 +102,11 @@ public class XbootWebSecurityConfigurer
 
   @Override
   public void configure(WebSecurity web) throws Exception {
-//    web
-//        .ignoring()
-//        .antMatchers("/**");
-    super.configure(web);
+    web
+        .ignoring()
+        .antMatchers("/test");
+//    super.configure(web);
+
   }
 
 
