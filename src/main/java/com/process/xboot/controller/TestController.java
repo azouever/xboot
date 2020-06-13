@@ -3,6 +3,8 @@ package com.process.xboot.controller;
 
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
+
+import com.process.xboot.entity.BallTeam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -59,23 +61,17 @@ public class TestController {
     return new ModelAndView("redirect:/test/redirect/test_flash_attribute");
   }
 
-  @GetMapping("/suffix")
-  public ModelAndView viewSuffixTest(HttpServletRequest request) {
-    return new ModelAndView("redirect:/login.html");
+  @GetMapping("/403")
+  public ModelAndView testViewSuffix(HttpServletRequest request) {
+    return new ModelAndView("HTTP403");
+  }
+  @GetMapping("/json")
+  public ResponseEntity<Object> testJson(HttpServletRequest request) {
+    BallTeam ballTeam = new BallTeam();
+    ballTeam.setName("binpu");
+    ballTeam.setAddress("pujiang");
+    return ResponseEntity.ok(ballTeam);
   }
 
-  @GetMapping("/bean")
-  public ResponseEntity webConfigBeanTest(HttpServletRequest request) {
-    Map<String, WebMvcConfigurer> mvcConfigurerMap = applicationContext
-        .getBeansOfType(WebMvcConfigurer.class);
-    mvcConfigurerMap.forEach((key, value) -> log.info(key + "------>" + value));
-    return ResponseEntity.ok().build();
-  }
-
-
-  @ModelAttribute
-  public void testExecute() {
-    log.info("---------method with `@ModelAttribute` executed-------");
-  }
 }
 

@@ -1,3 +1,6 @@
 here are something about this package
 这个包最开始是学习netty的时候，是这样，最开始的时候只知道应用要部署到应用服务器中，然后就知道tomcat服务器，后来知道了还有
 jetty undertow 然后就发现netty，但是netty主要是处理网络连接高效的 忘记了不知道
+
+
+应用和内核空间的数据io 拷贝消耗

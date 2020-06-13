@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -19,6 +20,7 @@ public class FileSystemWatchTest {
         FileSystem fileSystem = FileSystems.getDefault();
         WatchService watchService = fileSystem.newWatchService();
         Properties properties = System.getProperties();
+        Map<String, String> env = System.getenv();
         Path path = Paths.get("/Users/xukaixuan/IdeaProjects/xboot/src/main/java/com/process/boot/io/fs");
         path.register(watchService,
                 StandardWatchEventKinds.ENTRY_CREATE,
