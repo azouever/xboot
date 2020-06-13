@@ -13,7 +13,7 @@
   <artifactId>xboot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>xboot</name>
-  <description>process project for Spring Boot</description>
+  <description>process project for to be e coder</description>
 
   <properties>
     <java.version>1.8</java.version>
@@ -29,6 +29,7 @@
     <javapoet.version>1.11.1</javapoet.version>
     <jol.version>0.10</jol.version>
     <protostuff.version>1.6.2</protostuff.version>
+    <rxJava.version>3.0.4</rxJava.version>
   </properties>
 
   <dependencies>
@@ -43,10 +44,17 @@
         <!--                </exclusion>-->
       </exclusions>
     </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -222,6 +230,12 @@
       <groupId>org.openjdk.jol</groupId>
       <artifactId>jol-core</artifactId>
       <version>${jol.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
+    <dependency>
+      <groupId>io.reactivex.rxjava3</groupId>
+      <artifactId>rxjava</artifactId>
+      <version>${rxJava.version}</version>
     </dependency>
 
     <dependency>

@@ -59,7 +59,6 @@ public class RabbitConfig {
     return admin;
   }
 
-//
 //  @Bean
 //  public Queue queueNew() {
 //    return new Queue("xboot.new");

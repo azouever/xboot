@@ -72,6 +72,7 @@ public class TestController {
     return ResponseEntity.ok().build();
   }
 
+
   @ModelAttribute
   public void testExecute() {
     log.info("---------method with `@ModelAttribute` executed-------");
