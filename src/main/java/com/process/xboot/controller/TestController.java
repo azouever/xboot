@@ -1,11 +1,12 @@
 package com.process.xboot.controller;
 
 
-import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
-
 import com.process.xboot.entity.BallTeam;
+import com.process.xboot.service.BillService;
+import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.aop.TargetClassAware;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
@@ -15,9 +16,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -34,6 +35,9 @@ public class TestController {
 
   @Autowired
   private ApplicationContext applicationContext;
+
+  @Autowired
+  private BillService billService;
 
   @GetMapping("/redirect/by_redirect_view")
   public RedirectView redirect(HttpServletRequest httpServletRequest,
@@ -65,6 +69,7 @@ public class TestController {
   public ModelAndView testViewSuffix(HttpServletRequest request) {
     return new ModelAndView("HTTP403");
   }
+
   @GetMapping("/json")
   public ResponseEntity<Object> testJson(HttpServletRequest request) {
     BallTeam ballTeam = new BallTeam();
@@ -73,5 +78,32 @@ public class TestController {
     return ResponseEntity.ok(ballTeam);
   }
 
+  @GetMapping("/asyncServlet")
+  public DeferredResult<String> testAsyncServlet(HttpServletRequest request) {
+    DeferredResult<String> result = new DeferredResult<>();
+
+    // 使用异步servlet之后，对于客户端来说还是一样的阻塞时长，但是对于服务端来说， 会提高服务端的并发处理能力
+    Thread thread = new Thread(() -> {
+
+      try {
+        //与客户端建立长连接之后 5秒之后返回结果
+        Thread.sleep(5000);
+
+        result.setResult("hello world");
+      } catch (Exception e) {
+
+      }
+    });
+    thread.start();
+    return result;
+  }
+
+  @GetMapping("/primary")
+  public ResponseEntity<Object> testPrimary(HttpServletRequest request) {
+    log.info("billService的被代理的Class类型:{}", billService.getClass());
+    log.info("billService的真实的Class类型:{}", ((TargetClassAware) billService).getTargetClass());
+    log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billService));
+    return ResponseEntity.ok("primary ok");
+  }
 }
 

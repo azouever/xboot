@@ -6,7 +6,8 @@ import com.process.xboot.entity.Bill;
 import com.process.xboot.entity.Plan;
 import com.process.xboot.entity.vo.BillVO;
 import com.process.xboot.service.BillService;
-import com.process.xboot.service.impl.BillServiceImpl1;
+import java.util.Arrays;
+import java.util.Date;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.TargetClassAware;
 import org.springframework.aop.support.AopUtils;
@@ -15,11 +16,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.util.Arrays;
-import java.util.Date;
 
 /**
  * @author xkx
@@ -35,7 +37,7 @@ public class BillController {
 
   private final BillService billService;
 
-  public BillController(BillServiceImpl1 billService) {
+  public BillController(BillService billService) {
     this.billService = billService;
   }
 

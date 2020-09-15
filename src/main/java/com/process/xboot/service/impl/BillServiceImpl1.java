@@ -5,17 +5,16 @@ import com.process.xboot.entity.Goods;
 import com.process.xboot.mapper.BillMapper;
 import com.process.xboot.mapper.GoodsMapper;
 import com.process.xboot.service.BillService;
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
-
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
 
 /**
  * @author xkx
@@ -24,6 +23,7 @@ import java.util.UUID;
 @Slf4j
 @Service("billService1")
 @EnableAsync
+//@Primary
 public class BillServiceImpl1 implements BillService {
 
   @Autowired

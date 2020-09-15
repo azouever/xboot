@@ -80,7 +80,7 @@ public class XbootWebSecurityConfigurer
 //    })
     http.antMatcher("/find/*").csrf().disable().authorizeRequests()
 //        .antMatchers(SIGN_UP_URL).permitAll()
-        .antMatchers("/test/**", "/static/**", "/favicon.ico").permitAll()
+        .antMatchers("//actuator/**", "/test/**", "/static/**", "/favicon.ico").permitAll()
         .antMatchers("/settle/**").hasRole("settle")
         .anyRequest().authenticated()
         .and()

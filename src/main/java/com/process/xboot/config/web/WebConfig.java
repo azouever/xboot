@@ -2,8 +2,11 @@ package com.process.xboot.config.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistration;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -33,7 +36,7 @@ public class WebConfig implements WebMvcConfigurer {
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {
     registry.addResourceHandler("/static/**")
-            .addResourceLocations("classpath:/static/");
+        .addResourceLocations("classpath:/static/");
   }
 
   @Bean
@@ -42,5 +45,13 @@ public class WebConfig implements WebMvcConfigurer {
     resolver.setPrefix("/");
     resolver.setSuffix(".html");
     return resolver;
+  }
+
+  @Override
+  public void addViewControllers(ViewControllerRegistry registry) {
+    ViewControllerRegistration r = registry.addViewController("/test/view_registry");
+    r.setViewName("hello");
+    r.setStatusCode(HttpStatus.GONE);
+    registry.addStatusController("/test/justCode", HttpStatus.SERVICE_UNAVAILABLE);
   }
 }

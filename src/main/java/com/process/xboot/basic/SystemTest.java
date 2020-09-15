@@ -1,14 +1,10 @@
 package com.process.xboot.basic;
 
 
-import com.google.common.collect.Lists;
-import org.junit.Test;
-import reactor.core.publisher.Flux;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import org.junit.Test;
+import reactor.core.publisher.Flux;
 
 public class SystemTest {
 
@@ -22,6 +18,7 @@ public class SystemTest {
 
     @Test
     public void propertiesTest() {
+        System.setProperty("test_xkx", "test_xkx");
         Properties properties = System.getProperties();
 //        Flux.fromIterable(properties.stringPropertyNames()).subscribe(name->{
 //            System.out.println("properties name:[["+name+"]]------"+"properties value:[["+properties.getProperty(name)+"]]");

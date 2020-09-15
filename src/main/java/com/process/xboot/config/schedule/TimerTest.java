@@ -1,7 +1,5 @@
 package com.process.xboot.config.schedule;
 
-import java.util.Date;
-import java.util.Timer;
 import java.util.TimerTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +14,8 @@ public class TimerTest {
 
   public static void main(String[] args) {
     TimerTask timerTask = new CustomTimerTask();
-    Timer timer = new Timer();
-     timer.schedule(timerTask,new Date(),3000);
+//    LocalEventTimer timer = LocalEventTimer.getInstance();
+//    timer.schedule(timerTask,new Date(),3000);
   }
 
 

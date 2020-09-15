@@ -1,5 +1,7 @@
 server:
   port: 8098
+  tomcat:
+    max-threads: 300
 #  servlet:
 #    session:
 #      cookie:
@@ -103,3 +105,15 @@ mybatis:
 logging:
   level:
     root: info
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  health:
+    redis:
+      enabled: false
+

@@ -3,6 +3,7 @@ package com.process.xboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.event.ApplicationEventMulticaster;
@@ -18,6 +19,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @MapperScan(basePackages = "com.process.xboot.mapper")
 @EntityScan(basePackages = "com.process.xboot.entity")
+@ServletComponentScan
 public class XbootApplication {
 
   public static void main(String[] args) {
@@ -43,5 +45,6 @@ public class XbootApplication {
   public PasswordEncoder bCryptPasswordEncoder() {
     return new BCryptPasswordEncoder();
   }
+
 
 }
