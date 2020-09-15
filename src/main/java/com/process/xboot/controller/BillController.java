@@ -35,18 +35,21 @@ public class BillController {
   @Autowired
   private ApplicationContext applicationContext;
 
-  private final BillService billService;
+//  private final BillService billService;
+//
+//  public BillController(BillService billService) {
+//    this.billService = billService;
+//  }
 
-  public BillController(BillService billService) {
-    this.billService = billService;
-  }
+  @Autowired
+  private BillService billServiceImpl;
 
   @GetMapping("/find")
   public ResponseEntity findBills() {
 //    billService.findBills();
-    log.info("billService的被代理的Class类型:{}", billService.getClass());
-    log.info("billService的真实的Class类型:{}", ((TargetClassAware) billService).getTargetClass());
-    log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billService));
+    log.info("billService的被代理的Class类型:{}", billServiceImpl.getClass());
+    log.info("billService的真实的Class类型:{}", ((TargetClassAware) billServiceImpl).getTargetClass());
+    log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billServiceImpl));
 
     String[] names = applicationContext.getBeanNamesForType(BillService.class);
     Arrays.stream(names).forEach(System.out::println);
@@ -60,7 +63,7 @@ public class BillController {
     bill.setCreateDate(new Date());
     bill.setPersonId(23L);
     try {
-      billService.saveBill(bill);
+      billServiceImpl.saveBill(bill);
     } catch (Exception e) {
       log.warn("save bill occur exception:{}", e);
       return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("保存账单异常");

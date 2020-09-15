@@ -3,6 +3,7 @@ package com.process.xboot.controller;
 
 import com.process.xboot.entity.BallTeam;
 import com.process.xboot.service.BillService;
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.TargetClassAware;
@@ -36,8 +37,11 @@ public class TestController {
   @Autowired
   private ApplicationContext applicationContext;
 
-  @Autowired
-  private BillService billService;
+//  @Autowired
+
+  @Inject
+//  @Resource
+  private BillService billServiceImpl;
 
   @GetMapping("/redirect/by_redirect_view")
   public RedirectView redirect(HttpServletRequest httpServletRequest,
@@ -100,9 +104,9 @@ public class TestController {
 
   @GetMapping("/primary")
   public ResponseEntity<Object> testPrimary(HttpServletRequest request) {
-    log.info("billService的被代理的Class类型:{}", billService.getClass());
-    log.info("billService的真实的Class类型:{}", ((TargetClassAware) billService).getTargetClass());
-    log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billService));
+    log.info("billService的被代理的Class类型:{}", billServiceImpl.getClass());
+    log.info("billService的真实的Class类型:{}", ((TargetClassAware) billServiceImpl).getTargetClass());
+    log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billServiceImpl));
     return ResponseEntity.ok("primary ok");
   }
 }

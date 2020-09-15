@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Primary;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +19,8 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 @Slf4j
 @Service
 @EnableAsync
-@Primary
+//@Primary
+//@Priority(2)
 public class BillServiceImpl implements BillService {
 
   private static ReentrantLock lock = new ReentrantLock();

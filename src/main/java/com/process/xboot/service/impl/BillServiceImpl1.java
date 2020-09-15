@@ -9,6 +9,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+import javax.annotation.Priority;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -21,9 +22,10 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  * @description
  */
 @Slf4j
-@Service("billService1")
+@Service()
 @EnableAsync
 //@Primary
+@Priority(1)
 public class BillServiceImpl1 implements BillService {
 
   @Autowired
