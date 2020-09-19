@@ -6,9 +6,10 @@ import com.process.xboot.service.BillService;
 import java.util.List;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
+import javax.inject.Named;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Primary;
 import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
@@ -17,10 +18,11 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  * @description
  */
 @Slf4j
-@Service
+//@Service
 @EnableAsync
-//@Primary
+@Primary
 //@Priority(2)
+@Named
 public class BillServiceImpl implements BillService {
 
   private static ReentrantLock lock = new ReentrantLock();
@@ -51,6 +53,7 @@ public class BillServiceImpl implements BillService {
       log.info("当前线程的事务名字:{}", TransactionSynchronizationManager.getCurrentTransactionName());
     } finally {
       lock.unlock();
+
     }
 
   }

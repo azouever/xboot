@@ -4,6 +4,7 @@ package com.process.xboot.controller;
 import com.process.xboot.entity.BallTeam;
 import com.process.xboot.service.BillService;
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.TargetClassAware;
@@ -41,6 +42,7 @@ public class TestController {
 
   @Inject
 //  @Resource
+  @Named("billServiceImpl1")
   private BillService billServiceImpl;
 
   @GetMapping("/redirect/by_redirect_view")
