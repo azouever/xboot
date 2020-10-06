@@ -1,4 +1,7 @@
 #!/bin/zsh
-echo "hello world"
+
+a="hello world"
+echo "${a}"
+echo "${#a}"
 echo $(pwd)
 echo $(date)
