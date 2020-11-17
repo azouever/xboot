@@ -1,4 +1,4 @@
-package com.process.xboot.jdk8.functionprogram;
+package com.process.xboot.jdk8.functionprogram.predicate_demo;
 // Java program to demonstrate working of predicates
 // on collection. The program finds all admins in an 
 // arrayList of users. 

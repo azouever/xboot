@@ -1,4 +1,4 @@
-package com.process.xboot.jdk8.functionprogram;
+package com.process.xboot.jdk8.functionprogram.predicate_demo;
 
 import java.util.function.Predicate;
 
