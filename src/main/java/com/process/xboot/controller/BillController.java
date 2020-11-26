@@ -95,5 +95,10 @@ public class BillController {
     BallTeam ballTeam = applicationContext.getBean(BallTeam.class);
     return ballTeam.getName();
   }
+
+  @GetMapping("/pay")
+  public String pay(String billNo) {
+    return billServiceImpl.pay(billNo);
+  }
 }
 

@@ -59,6 +59,11 @@ public class BillServiceImpl1 implements BillService {
     this.updateGoods();
   }
 
+  @Override
+  public String pay(String billNo) {
+    return null;
+  }
+
   private void updateGoods() {
 
     log.info("当前线程是否处于事务中:{}", TransactionSynchronizationManager.isActualTransactionActive());

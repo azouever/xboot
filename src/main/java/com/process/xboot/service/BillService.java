@@ -20,4 +20,11 @@ public interface BillService {
    */
   void saveBill(Bill bill);
 
+  /**
+   * 账单支付
+   *
+   * @param billNo 账单编号
+   * @return 支付结果
+   */
+  String pay(String billNo);
 }

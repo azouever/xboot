@@ -8,6 +8,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import javax.inject.Named;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.aop.framework.AopContext;
 import org.springframework.context.annotation.Primary;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,7 +44,7 @@ public class BillServiceImpl implements BillService {
   @Override
   @Transactional(rollbackFor = Exception.class)
   public void saveBill(Bill bill) {
-
+    BillService b = (BillService) AopContext.currentProxy();
     try {
       lock.lock();
       System.out.println(this);
@@ -56,5 +57,10 @@ public class BillServiceImpl implements BillService {
 
     }
 
+  }
+
+  @Override
+  public String pay(String billNo) {
+    return null;
   }
 }

@@ -18,13 +18,12 @@ public class FluxDemo {
   public static void main(String[] args) {
 
     Flux<String> flux = Flux.just("tom", "jack", "allen")
+        .log()
         .filter(s -> s.length() > 3)
         .publishOn(Schedulers.elastic())
         .map(s -> s.concat("------" + Thread.currentThread().getName()));
     ThreadUtil.sleep(2000);
-    flux.subscribe(s -> {
-      System.out.println(s);
-    });
+    flux.subscribe(System.out::println);
 
     flux.subscribe(new Subscriber<String>() {
       @Override

@@ -1,8 +1,12 @@
 package com.process.xboot.controller;
 
 
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSONUtil;
 import com.process.xboot.entity.BallTeam;
+import com.process.xboot.entity.Plan;
 import com.process.xboot.service.BillService;
+import java.util.Enumeration;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
@@ -13,10 +17,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.servlet.ModelAndView;
@@ -105,11 +112,28 @@ public class TestController {
   }
 
   @GetMapping("/primary")
-  public ResponseEntity<Object> testPrimary(HttpServletRequest request) {
+  public ResponseEntity<Object> testPrimary(
+      @CookieValue(value = "sessionToken", required = false) String sessionToken,
+      HttpServletRequest request) {
+    log.info("测试从cookie中拿值，SessionToken：{}", sessionToken);
     log.info("billService的被代理的Class类型:{}", billServiceImpl.getClass());
     log.info("billService的真实的Class类型:{}", ((TargetClassAware) billServiceImpl).getTargetClass());
     log.info("billService的真实的Class类型:{}", AopUtils.getTargetClass(billServiceImpl));
     return ResponseEntity.ok("primary ok");
+  }
+
+  @PostMapping(value = "/form")
+  public ResponseEntity<Object> testForm(@RequestBody Plan plan,
+      HttpServletRequest httpServletRequest, @RequestParam(required = false) String address) {
+    log.info("ok,run in {}", StrUtil.isBlank(address) ? "default" : address);
+    log.info(plan.toString());
+    Enumeration<String> headerNames = httpServletRequest.getHeaderNames();
+    while (headerNames.hasMoreElements()) {
+      String headerName = headerNames.nextElement();
+      System.out.println("request header -->" + headerName + "<--,value: " + httpServletRequest
+          .getHeader(headerName));
+    }
+    return ResponseEntity.ok(JSONUtil.toJsonStr(plan));
   }
 }
 
