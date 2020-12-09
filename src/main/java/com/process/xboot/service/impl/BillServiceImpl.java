@@ -2,6 +2,7 @@ package com.process.xboot.service.impl;
 
 import com.process.xboot.entity.Bill;
 import com.process.xboot.exception.XbootRuntimeException;
+import com.process.xboot.groovy.GroovyService;
 import com.process.xboot.service.BillService;
 import java.util.List;
 import java.util.concurrent.locks.Condition;
@@ -24,6 +25,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 @Primary
 //@Priority(2)
 @Named
+@GroovyService
 public class BillServiceImpl implements BillService {
 
   private static ReentrantLock lock = new ReentrantLock();
@@ -61,6 +63,6 @@ public class BillServiceImpl implements BillService {
 
   @Override
   public String pay(String billNo) {
-    return null;
+    return billNo;
   }
 }

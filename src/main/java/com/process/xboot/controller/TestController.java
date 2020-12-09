@@ -18,12 +18,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.servlet.ModelAndView;
@@ -134,6 +136,29 @@ public class TestController {
           .getHeader(headerName));
     }
     return ResponseEntity.ok(JSONUtil.toJsonStr(plan));
+  }
+
+  @RequestMapping("/exception/null")
+  public String nullPointer() {
+    log.info("start NullPointerException");
+    Object object = null;
+//    String[] names = {"sh","cd","bj","sz"};
+//    System.out.println(names[8]);
+    return object.toString();
+  }
+
+  @ExceptionHandler(NullPointerException.class)
+  @ResponseBody
+  public String handleNullPointerException(NullPointerException ex) {
+    log.error("error happened:", ex);
+    return this.getClass().getSimpleName() + ":" + ex.getMessage();
+  }
+
+  @ExceptionHandler(IndexOutOfBoundsException.class)
+  @ResponseBody
+  public String handleIndexOutOfBoundsException(IndexOutOfBoundsException ex) {
+    log.error("error happened:", ex);
+    return this.getClass().getSimpleName() + ":" + ex.getMessage();
   }
 }
 
