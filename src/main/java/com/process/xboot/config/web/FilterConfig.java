@@ -1,39 +1,31 @@
 package com.process.xboot.config.web;
 
+import com.process.xboot.config.web.filter.ReqBodyFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * filter配置
  */
-//@Configuration
+@Configuration
 public class FilterConfig {
 
-  @Bean
-  public FilterRegistrationBean companyUrlFilterRegister() {
-    FilterRegistrationBean registration = new FilterRegistrationBean();
-    //注入过滤器
-//        registration.setFilter(new TestFilter1());
-    //拦截规则
-    registration.addUrlPatterns("/*");
-    //过滤器名称
-    registration.setName("testFilter1");
-    //过滤器顺序
-    registration.setOrder(FilterRegistrationBean.LOWEST_PRECEDENCE);
-    return registration;
-  }
+  @Autowired
+  private ReqBodyFilter reqBodyFilter;
 
   @Bean
-  public FilterRegistrationBean outLinkSecurityFilterRegister() {
-    FilterRegistrationBean registration = new FilterRegistrationBean();
+  public FilterRegistrationBean<ReqBodyFilter> companyUrlFilterRegister() {
+    FilterRegistrationBean<ReqBodyFilter> registration = new FilterRegistrationBean();
     //注入过滤器
-//        registration.setFilter(new TestFilter2());
+    registration.setFilter(reqBodyFilter);
     //拦截规则
-    registration.addUrlPatterns("/*");
+    registration.addUrlPatterns("/test/form");
     //过滤器名称
-    registration.setName("testFilter2");
+    registration.setName("reqBodyFilter");
     //过滤器顺序
-    registration.setOrder(FilterRegistrationBean.LOWEST_PRECEDENCE - 1);
+    registration.setOrder(FilterRegistrationBean.LOWEST_PRECEDENCE);
     return registration;
   }
 

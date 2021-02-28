@@ -102,7 +102,7 @@ public class TestController {
 
       try {
         //与客户端建立长连接之后 5秒之后返回结果
-        Thread.sleep(5000);
+        Thread.sleep(1000 * 10 * 40);
 
         result.setResult("hello world");
       } catch (Exception e) {
@@ -128,6 +128,7 @@ public class TestController {
   public ResponseEntity<Object> testForm(@RequestBody Plan plan,
       HttpServletRequest httpServletRequest, @RequestParam(required = false) String address) {
     log.info("ok,run in {}", StrUtil.isBlank(address) ? "default" : address);
+    log.info(Thread.currentThread().getName());
     log.info(plan.toString());
     Enumeration<String> headerNames = httpServletRequest.getHeaderNames();
     while (headerNames.hasMoreElements()) {
@@ -147,8 +148,8 @@ public class TestController {
     return object.toString();
   }
 
-  @ExceptionHandler(NullPointerException.class)
-  @ResponseBody
+  //  @ExceptionHandler(NullPointerException.class)
+//  @ResponseBody
   public String handleNullPointerException(NullPointerException ex) {
     log.error("error happened:", ex);
     return this.getClass().getSimpleName() + ":" + ex.getMessage();

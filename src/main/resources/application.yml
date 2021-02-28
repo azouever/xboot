@@ -1,7 +1,8 @@
 server:
   port: 8098
   tomcat:
-    max-threads: 300
+    max-threads: 1
+    accept-count: 100
 #  servlet:
 #    session:
 #      cookie:
@@ -24,24 +25,24 @@ spring:
   #  resources:
   #    static-locations: /static/**
   datasource:
-    url: jdbc:h2:mem:testdb
-    name: sa
-    password:
-    driver-class-name: org.h2.Driver
-      #    url: jdbc:mysql:///leaf?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
-      #    username: root
-      #    password:
-      #    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    url: jdbc:h2:mem:testdb
+    #    name: sa
+    #    password:
+    #    driver-class-name: org.h2.Driver
+    url: jdbc:mysql:///leaf?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 
-      #  redis:
-      #    host: localhost
-      #    port: 6379
-      #    database: 3
-      #    cluster:
-      #      max-redirects: 3
-      #      nodes:
-      #            - 11111:6379
+    #  redis:
+    #    host: localhost
+    #    port: 6379
+    #    database: 3
+    #    cluster:
+    #      max-redirects: 3
+    #      nodes:
+    #            - 11111:6379
       #            - 11112:6379
       #            - 11113:6379
       #    sentinel:
@@ -59,11 +60,11 @@ spring:
     #jedis客户端
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: true
     database: mysql
-    #    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  #    database-platform: org.hibernate.dialect.H2Dialect
   rabbitmq:
     host: localhost
     port: 5672
