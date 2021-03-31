@@ -24,7 +24,7 @@
     <mapper-spring-boot-starter.verison>2.0.4</mapper-spring-boot-starter.verison>
     <hutool-all.version>4.6.1</hutool-all.version>
     <caffeine.version>2.8.0</caffeine.version>
-    <guava.version>28.1-jre</guava.version>
+    <guava.version>29.0-jre</guava.version>
     <fastjson.version>1.2.60</fastjson.version>
     <javapoet.version>1.11.1</javapoet.version>
     <jol.version>0.10</jol.version>
